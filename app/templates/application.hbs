@@ -1,13 +1,30 @@
-{{outlet}}
+<!--loadingbar-->
+{{#loader}}{{/loader}}
 
+{{outlet}}
 
 <!--header-->
 <div class="layout-row layout-align-center">
-  {{#paper-button onClick=(action "flatButton")}}HOME{{/paper-button}}
-  {{#paper-button onClick=(action "flatButton")}}SELF{{/paper-button}}
-  {{#paper-button onClick=(action "flatButton")}}TECH{{/paper-button}}
-  {{#paper-button onClick=(action "flatButton")}}HEATED{{/paper-button}}
-  {{#paper-button onClick=(action "flatButton")}}DESIGN{{/paper-button}}
-  {{#paper-button onClick=(action "flatButton")}}CULTURE{{/paper-button}}
-  {{#paper-button onClick=(action "flatButton")}}MORE{{/paper-button}}
+  hello hello
 </div>
+
+<div class="layout-row layout-align-space-around-center">
+  <div class="flex">
+    <img alt="blog" height="30px" src="https://www.shijiezhou.com/images/newlogo.png" style="display: block;margin-left: auto;margin-right: auto;
+" width="30px">
+  </div>
+  <div class="flex">askdsadas asdklaslkas lkasd saldksaldk laskdl;askdl;sakd;kasld;kas</div>
+  <div class="flex">
+    <i class="material-icons">search</i></div>
+</div>
+
+<div class="layout-row layout-align-center">
+  {{#paper-button onClick=(action "HOME")}}HOME{{/paper-button}}
+  {{#paper-button onClick=(action "SELF")}}SELF{{/paper-button}}
+  {{#paper-button onClick=(action "TECH")}}TECH{{/paper-button}}
+  {{#paper-button onClick=(action "HEATED")}}HEATED{{/paper-button}}
+  {{#paper-button onClick=(action "DESIGN")}}DESIGN{{/paper-button}}
+  {{#paper-button onClick=(action "CULTURE")}}CULTURE{{/paper-button}}
+  {{#paper-button onClick=(action "MORE")}}MORE{{/paper-button}}
+</div>
+
