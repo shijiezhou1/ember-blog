@@ -23,6 +23,5 @@ export default Controller.extend({
     MORE: function () {
       console.log('called');
     }
-
   }
 });
