@@ -1,10 +1,10 @@
-<!--loadingbar-->
-{{#loader}}{{/loader}}
-
 {{outlet}}
 
-<!--header-->
-<nav class="" style="top: 0px;position: sticky; background:white">
+<nav class="" style="top: 0px;left: 0px;position: fixed;background:white;right: 0px;">
+  <!--loadingbar-->
+  {{#loader}}{{/loader}}
+  
+  <!--header-->
   <div class="layout-row layout-align-space-around-center">
     <div class="flex">
       <img alt="blog" height="30px" src="https://www.shijiezhou.com/images/newlogo.png"
@@ -16,7 +16,7 @@
       <i class="material-icons">notification_important</i>
       <img src="https://cdn-images-1.medium.com/fit/c/64/64/0*b90Ej2bAcyCdYYuY" alt="user image" width="30px"
         height="30px">
-    </div>
+     </div>
   </div>
   <div class="layout-row layout-align-center">
     {{#paper-button onClick=(action "HOME")}}HOME{{/paper-button}}
@@ -29,108 +29,76 @@
   </div>
 </nav>
 
-<div class="layout-row layout-xs-column">
-  <div class="layout-column flex-xs flex-gt-xs-50">
-    {{#paper-card as |card|}}
+<div class="container" style="margin-top: 85px;">
+  <div class="layout-row layout-align-center">
+    <div class="layout-column flex-50 flex-lg-25">
+     {{#paper-card as |card|}}
       {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
       {{#card.title as |title|}}
-        {{#title.text as |text|}}
-          {{#text.headline}}Action buttons{{/text.headline}}
-        {{/title.text}}
+      {{#title.text as |text|}}
+      {{#text.headline}}Icon action buttons{{/text.headline}}
+      {{/title.text}}
       {{/card.title}}
       {{#card.content}}
-        <p>
-          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-        </p>
-        <p>
-          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-        </p>
-        <p>
-          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-        </p>
+      <p>
+        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+      </p>
       {{/card.content}}
       {{#card.actions}}
-        {{#paper-button}}Action 1{{/paper-button}}
-        {{#paper-button}}Action 2{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
       {{/card.actions}}
-    {{/paper-card}}
+      {{/paper-card}}
 
-    {{#paper-card as |card|}}
+      {{#paper-card as |card|}}
       {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
       {{#card.title as |title|}}
-        {{#title.text as |text|}}
-          {{#text.headline}}Vertical action buttons{{/text.headline}}
-        {{/title.text}}
+      {{#title.text as |text|}}
+      {{#text.headline}}Icon action buttons{{/text.headline}}
+      {{/title.text}}
       {{/card.title}}
       {{#card.content}}
-        <p>
-          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-        </p>
-      {{/card.content}}
-      {{#card.actions class="layout-column"}}
-        {{#paper-button}}Action 1{{/paper-button}}
-        {{#paper-button}}Action 2{{/paper-button}}
-      {{/card.actions}}
-    {{/paper-card}}
-  </div>
-
-  <div class="layout-column flex-xs flex-gt-xs-50">
-    {{#paper-card as |card|}}
-      {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
-      {{#card.title as |title|}}
-        {{#title.text as |text|}}
-          {{#text.headline}}Icon action buttons{{/text.headline}}
-        {{/title.text}}
-      {{/card.title}}
-      {{#card.content}}
-        <p>
-          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-        </p>
+      <p>
+        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+      </p>
       {{/card.content}}
       {{#card.actions}}
-        {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
-        {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
-        {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
       {{/card.actions}}
-    {{/paper-card}}
+      {{/paper-card}}
+    </div>
 
-    {{#paper-card as |card|}}
-      {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
-      {{#card.actions}}
-        {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
-        {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
-        {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
-      {{/card.actions}}
-    {{/paper-card}}
-
-    {{#paper-card as |card|}}
-      {{#card.header as |header|}}
-        {{#header.avatar}}
-          <img src="tomster-9918e85a7f1a28c78b484c34cbe88579.png" alt="tomster" />
-        {{/header.avatar}}
-        {{#header.text as |text|}}
-          {{#text.title}}Ember{{/text.title}}
-          {{#text.subhead}}Paper{{/text.subhead}}
-        {{/header.text}}
-      {{/card.header}}
+    <div class="layout-column flex-50 flex-lg-25">
+      {{#paper-card as |card|}}
       {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
       {{#card.title as |title|}}
-        {{#title.text as |text|}}
-          {{#text.headline}}Card header{{/text.headline}}
-        {{/title.text}}
+      {{#title.text as |text|}}
+      {{#text.headline}}Icon action buttons{{/text.headline}}
+      {{/title.text}}
       {{/card.title}}
       {{#card.content}}
-        <p>
-          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-        </p>
+      <p>
+        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+      </p>
       {{/card.content}}
-    {{/paper-card}}
+      {{#card.actions}}
+      {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
+      {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
+      {{/card.actions}}
+      {{/paper-card}}
+    </div>
   </div>
 </div>
-<div class="" style="height:1600px">asdasdsa</div>
+
+<div class="" style="height:1600px"></div>
