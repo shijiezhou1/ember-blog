@@ -5,5 +5,6 @@ module.exports = {
   extends: 'recommended',
   rules: {
     'no-inline-styles': false,
-  },
+    'self-closing-void-elements': false
+  }
 };
