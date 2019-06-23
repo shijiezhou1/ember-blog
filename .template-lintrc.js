@@ -4,6 +4,6 @@
 module.exports = {
   extends: 'recommended',
   rules: {
-    allowDynamicStyles: true
+    'no-inline-styles': false,
   },
 };

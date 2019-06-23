@@ -1,7 +1,5 @@
 {{outlet}}
-<nav
-  class="application_nav"
->
+<nav class="application_nav md-whiteframe-2dp">
   {{! loading bar }}
   {{#loader}}{{/loader}}
   {{!header}}
@@ -11,7 +9,7 @@
         class="application_tmp_img"
         alt="blog"
         src="https://www.shijiezhou.com/images/newlogo.png"
-      >
+       />
 
     </div>
     <div class="flex-50"></div>
@@ -27,7 +25,7 @@
         alt="user image"
         width="30px"
         height="30px"
-      >
+       />
 
     </div>
   </div>
@@ -55,11 +53,11 @@
     {{/paper-button}}
   </div>
 </nav>
-<div class="application_float_card_left" >
+<div class="application_float_card_left">
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
 </div>
-<div class="application_float_card_right" >
+<div class="application_float_card_right">
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
 </div>
@@ -168,3 +166,16 @@
   }
 </style>
 <div class="fakeHeight"></div>
+
+
+<div class="same">
+  {{#paper-button raised=true}}
+  A button
+  {{#paper-tooltip position=right}}
+    Hey! I'm a tooltip. Çup?
+  {{/paper-tooltip}}
+{{/paper-button}}
+</div>
+
+<br>
+<br>
