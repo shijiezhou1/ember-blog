@@ -1,13 +1,18 @@
 {{#paper-card as |card|}}
-{{#card.title as |title|}}
-{{#title.text as |text|}}
-{{#text.headline}}Card with image{{/text.headline}}
-{{#text.subhead}}Large{{/text.subhead}}
-{{/title.text}}
-{{title.media size="lg" src="http://miguelcobain.github.io/ember-paper/tomster-9918e85a7f1a28c78b484c34cbe88579.png" alt="Tomster" title="Tomster"}}
-{{/card.title}}
-{{#card.actions}}
-{{#paper-button}}Action 1{{/paper-button}}
-{{#paper-button}}Action 2{{/paper-button}}
-{{/card.actions}}
+  {{#card.title as |title|}}
+    {{#title.text as |text|}}
+      {{#text.headline}}Card with image{{/text.headline}}
+      {{#text.subhead}}Large{{/text.subhead}}
+    {{/title.text}}
+    {{title.media
+      size="lg"
+      src="http://miguelcobain.github.io/ember-paper/tomster-9918e85a7f1a28c78b484c34cbe88579.png"
+      alt="Tomster"
+      title="Tomster"
+    }}
+  {{/card.title}}
+  {{#card.actions}}
+    {{#paper-button}}Action 1{{/paper-button}}
+    {{#paper-button}}Action 2{{/paper-button}}
+  {{/card.actions}}
 {{/paper-card}}

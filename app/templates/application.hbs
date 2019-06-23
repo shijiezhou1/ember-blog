@@ -1,117 +1,168 @@
 {{outlet}}
-
-<nav class="" style="top: 0px;left: 0px;position: fixed;background:white;right: 0px;box-shadow: 2px 1px 20px 2px #00000029;">
-  <!--loadingbar-->
+<nav
+  class=""
+  style="top:0px;left: 0px;position: fixed;background:white;right: 0px;box-shadow: 2px 1px 20px 2px #00000029;"
+>
+  {{! loading bar }}
   {{#loader}}{{/loader}}
-
-  <!--header-->
+  {{!header}}
   <div class="layout-row layout-align-space-around-center">
     <div class="flex">
-      <img alt="blog" height="30px" src="https://www.shijiezhou.com/images/newlogo.png"
-        style="display:block;margin-left:auto;margin-right:auto;" width="30px">
+      <img
+        alt="blog"
+        height="30px"
+        src="https://www.shijiezhou.com/images/newlogo.png"
+        style="display:block;margin-left:auto;margin-right:auto;"
+        width="30px"
+       />
+
     </div>
     <div class="flex-50"></div>
     <div class="flex">
-      <i class="material-icons">search</i>
-      <i class="material-icons">notification_important</i>
-      <img src="https://cdn-images-1.medium.com/fit/c/64/64/0*b90Ej2bAcyCdYYuY" alt="user image" width="30px"
-        height="30px">
+      <i class="material-icons">
+        search
+      </i>
+      <i class="material-icons">
+        notification_important
+      </i>
+      <img
+        src="https://cdn-images-1.medium.com/fit/c/64/64/0*b90Ej2bAcyCdYYuY"
+        alt="user image"
+        width="30px"
+        height="30px"
+       />
+
     </div>
   </div>
   <div class="layout-row layout-align-center">
-    {{#paper-button onClick=(action "HOME")}}HOME{{/paper-button}}
-    {{#paper-button onClick=(action "SELF")}}SELF{{/paper-button}}
-    {{#paper-button onClick=(action "TECH")}}TECH{{/paper-button}}
-    {{#paper-button onClick=(action "HEATED")}}HEATED{{/paper-button}}
-    {{#paper-button onClick=(action "DESIGN")}}DESIGN{{/paper-button}}
-    {{#paper-button onClick=(action "CULTURE")}}CULTURE{{/paper-button}}
-    {{#paper-button onClick=(action "MORE")}}MORE{{/paper-button}}
+    {{#paper-button onClick=(action "HOME")}}
+      HOME
+    {{/paper-button}}
+    {{#paper-button onClick=(action "SELF")}}
+      SELF
+    {{/paper-button}}
+    {{#paper-button onClick=(action "TECH")}}
+      TECH
+    {{/paper-button}}
+    {{#paper-button onClick=(action "HEATED")}}
+      HEATED
+    {{/paper-button}}
+    {{#paper-button onClick=(action "DESIGN")}}
+      DESIGN
+    {{/paper-button}}
+    {{#paper-button onClick=(action "CULTURE")}}
+      CULTURE
+    {{/paper-button}}
+    {{#paper-button onClick=(action "MORE")}}
+      MORE
+    {{/paper-button}}
   </div>
 </nav>
-
-
 <div class="" style="position: fixed;left: 5%;top: 14%;">
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
 </div>
-
 <div class="" style="position: fixed;right: -3%; top:14%">
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
 </div>
-
 <div class="container" style="margin-top: 8%;">
-
   <div class="layout-row layout-align-center">
     <div class="layout-column flex-50 flex-md-25 flex-lg-25">
       {{#paper-card as |card|}}
-      {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
-      {{#card.title as |title|}}
-      {{#title.text as |text|}}
-      {{#text.headline}}Icon action buttons{{/text.headline}}
-      {{/title.text}}
-      {{/card.title}}
-      {{#card.content}}
-      <p>
-        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        {{card.image
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png"
+          alt="Washed Out"
+          title="Washed Out"
+        }}
+        {{#card.title as |title|}}
+          {{#title.text as |text|}}
+            {{#text.headline}}Icon action buttons{{/text.headline}}
+          {{/title.text}}
+        {{/card.title}}
+        {{#card.content}}
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
         two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
         The titles of Washed Out's breakthrough song and the first single from Paracosm share the
         two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
         The titles of Washed Out's breakthrough song and the first single from Paracosm share the
         two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-      </p>
-      {{/card.content}}
-      {{#card.actions}}
-      {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
-      {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
-      {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
-      {{/card.actions}}
+          </p>
+        {{/card.content}}
+        {{#card.actions}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "favorite"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "settings"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "share"}}
+          {{/paper-button}}
+        {{/card.actions}}
       {{/paper-card}}
-
       {{#paper-card as |card|}}
-      {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
-      {{#card.title as |title|}}
-      {{#title.text as |text|}}
-      {{#text.headline}}Icon action buttons{{/text.headline}}
-      {{/title.text}}
-      {{/card.title}}
-      {{#card.content}}
-      <p>
-        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        {{card.image
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png"
+          alt="Washed Out"
+          title="Washed Out"
+        }}
+        {{#card.title as |title|}}
+          {{#title.text as |text|}}
+            {{#text.headline}}Icon action buttons{{/text.headline}}
+          {{/title.text}}
+        {{/card.title}}
+        {{#card.content}}
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
         two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-      </p>
-      {{/card.content}}
-      {{#card.actions}}
-      {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
-      {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
-      {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
-      {{/card.actions}}
+          </p>
+        {{/card.content}}
+        {{#card.actions}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "favorite"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "settings"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "share"}}
+          {{/paper-button}}
+        {{/card.actions}}
       {{/paper-card}}
     </div>
-
     <div class="layout-column flex-50 flex-md-25 flex-lg-25">
       {{#paper-card as |card|}}
-      {{card.image src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png" alt="Washed Out" title="Washed Out"}}
-      {{#card.title as |title|}}
-      {{#title.text as |text|}}
-      {{#text.headline}}Icon action buttons{{/text.headline}}
-      {{/title.text}}
-      {{/card.title}}
-      {{#card.content}}
-      <p>
-        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        {{card.image
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png"
+          alt="Washed Out"
+          title="Washed Out"
+        }}
+        {{#card.title as |title|}}
+          {{#title.text as |text|}}
+            {{#text.headline}}Icon action buttons{{/text.headline}}
+          {{/title.text}}
+        {{/card.title}}
+        {{#card.content}}
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
         two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-      </p>
-      {{/card.content}}
-      {{#card.actions}}
-      {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
-      {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
-      {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
-      {{/card.actions}}
+          </p>
+        {{/card.content}}
+        {{#card.actions}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "favorite"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "settings"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "share"}}
+          {{/paper-button}}
+        {{/card.actions}}
       {{/paper-card}}
     </div>
   </div>
-
 </div>
-
 <div class="" style="height:1600px"></div>
