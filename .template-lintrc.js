@@ -1,5 +1,9 @@
+/* eslint-env node */
 'use strict';
 
 module.exports = {
-  extends: 'recommended'
+  extends: 'recommended',
+  rules: {
+    allowDynamicStyles: true
+  },
 };

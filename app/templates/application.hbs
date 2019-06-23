@@ -1,7 +1,6 @@
 {{outlet}}
 <nav
-  class=""
-  style="top:0px;left: 0px;position: fixed;background:white;right: 0px;box-shadow: 2px 1px 20px 2px #00000029;"
+  class="application_nav"
 >
   {{! loading bar }}
   {{#loader}}{{/loader}}
@@ -9,12 +8,10 @@
   <div class="layout-row layout-align-space-around-center">
     <div class="flex">
       <img
+        class="application_tmp_img"
         alt="blog"
-        height="30px"
         src="https://www.shijiezhou.com/images/newlogo.png"
-        style="display:block;margin-left:auto;margin-right:auto;"
-        width="30px"
-       />
+      >
 
     </div>
     <div class="flex-50"></div>
@@ -30,7 +27,7 @@
         alt="user image"
         width="30px"
         height="30px"
-       />
+      >
 
     </div>
   </div>
@@ -58,15 +55,15 @@
     {{/paper-button}}
   </div>
 </nav>
-<div class="" style="position: fixed;left: 5%;top: 14%;">
+<div class="application_float_card_left" >
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
 </div>
-<div class="" style="position: fixed;right: -3%; top:14%">
+<div class="application_float_card_right" >
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
   {{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
 </div>
-<div class="container" style="margin-top: 8%;">
+<div class="application_container">
   <div class="layout-row layout-align-center">
     <div class="layout-column flex-50 flex-md-25 flex-lg-25">
       {{#paper-card as |card|}}
@@ -165,4 +162,9 @@
     </div>
   </div>
 </div>
-<div class="" style="height:1600px"></div>
+<style>
+  .fakeHeight{
+    height: 1800px;
+  }
+</style>
+<div class="fakeHeight"></div>
