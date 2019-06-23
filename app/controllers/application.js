@@ -1,9 +1,13 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
+
+  setup() {
+    // console.log(model)
+  },
   actions: {
     HOME: function () {
-      // console.log('called');
+      // console.log('home');
     },
     SELF: function () {
       // console.log('called');

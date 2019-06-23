@@ -16,11 +16,9 @@ module('Integration | Component | loader', function(hooks) {
 
     // Template block usage:
     await render(hbs`
-      <Loader>
-        template block text
-      </Loader>
+      <Loader></Loader>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), '');
   });
 });

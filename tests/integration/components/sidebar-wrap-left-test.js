@@ -16,11 +16,9 @@ module('Integration | Component | sidebar-wrap-left', function(hooks) {
 
     // Template block usage:
     await render(hbs`
-      <SidebarWrapLeft>
-        template block text
-      </SidebarWrapLeft>
+      <SidebarWrapLeft></SidebarWrapLeft>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), '');
   });
 });
