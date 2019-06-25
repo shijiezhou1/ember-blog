@@ -1,6 +1,6 @@
 {{outlet}}
 <nav class="application_nav md-whiteframe-2dp">
-  {{! loading bar }}
+  {{!loading bar}}
   {{#loader}}{{/loader}}
   {{!header}}
   <div class="layout-row layout-align-space-around-center">
@@ -9,7 +9,7 @@
         class="application_tmp_img"
         alt="blog"
         src="https://www.shijiezhou.com/images/newlogo.png"
-      />
+       />
 
     </div>
     <div class="flex-50"></div>
@@ -25,13 +25,16 @@
         alt="user image"
         width="30px"
         height="30px"
-      />
+       />
 
     </div>
   </div>
   <div class="layout-row layout-align-center">
     {{#paper-button onClick=(action "HOME")}}
       HOME
+      {{#paper-tooltip position=bottom}}
+        Create
+      {{/paper-tooltip}}
     {{/paper-button}}
     {{#paper-button onClick=(action "SELF")}}
       SELF
@@ -91,9 +94,9 @@
           {{/paper-button}}
           {{#paper-button iconButton=true}}
             {{paper-icon "settings"}}
-          {{#paper-button iconButton=true}}
-            {{paper-icon "share"}}
-          {{/paper-button}}
+            {{#paper-button iconButton=true}}
+              {{paper-icon "share"}}
+            {{/paper-button}}
           {{/paper-button}}
         {{/card.actions}}
       {{/paper-card}}
@@ -165,12 +168,12 @@
     height: 1800px;
   }
 </style>
-<div class="fakeHeight"></div>
+{{!-- <div class="fakeHeight"></div>
 {{#paper-button iconButton=true raised=true}}
   {{paper-icon "create"}}
-  {{#paper-tooltip position=right}}
+  {{#paper-tooltip position=bottom}}
     Create
   {{/paper-tooltip}}
-{{/paper-button}}
-<br/>
-<br/>
+{{/paper-button}} --}}
+<br />
+<br />
