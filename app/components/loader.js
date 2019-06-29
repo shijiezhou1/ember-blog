@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-// import { computed } from '@ember/object';
+import { computed } from '@ember/object';
 
 /**
  * The loader component
@@ -7,6 +7,7 @@ import Component from '@ember/component';
  * @module
  * @class loader
  * @uses ember/component
+ * @uses ember/object
  * @namespace Component
  */
 export default Component.extend({
