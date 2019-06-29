@@ -1,5 +1,28 @@
 import Component from '@ember/component';
 
+/**
+ * The side wrap on the left
+ *
+ * @module
+ * @class sidebar-wrap-left
+ * @uses ember/component
+ * @namespace Component
+ *
+ */
 export default Component.extend({
-  classNames: ['layout-row flex-20 application-left-bar hide-sm hide-xs']
+  /**
+   * The classNames
+   *
+   * @property {Array} classNames
+   * @public
+   *
+   */
+  classNames: ['layout-row flex-20 application-left-bar hide-sm hide-xs'],
+  /**
+   * The first
+   *
+   * @property {String} first
+   * @private
+   */
+  first: 'first'
 });
