@@ -7,25 +7,25 @@ export default Controller.extend({
   },
   actions: {
     HOME: function () {
-      // console.log('home');
+      this.transitionToRoute('home');
     },
     SELF: function () {
-      // console.log('called');
+      this.transitionToRoute( 'self' );
     },
     TECH: function () {
-      // console.log('called');
+      this.transitionToRoute( 'tech' );
     },
     HEATED: function () {
-      // console.log('called');
+      this.transitionToRoute( 'heated' );
     },
     DESIGN: function () {
-      // console.log('called');
+      this.transitionToRoute( 'design' );
     },
     CULTURE: function () {
-      // console.log('called');
+      this.transitionToRoute( 'culture' );
     },
     MORE: function () {
-      // console.log('called');
+      this.transitionToRoute( 'more' );
     }
   }
 });

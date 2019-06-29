@@ -6,6 +6,7 @@
   position: fixed;
   background: white;
   right: 0px;
+  z-index: 10;
 }
 
 .application_tmp_img {
@@ -18,13 +19,13 @@
 
 .application_float_card_left {
   position: fixed;
-  left: 5%;
+  left: 10%;
   top: 14%;
 }
 
 .application_float_card_right {
   position: fixed;
-  right: -3%;
+  right: 10%;
   top: 14%;
 }
 

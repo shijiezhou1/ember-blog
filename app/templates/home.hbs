@@ -1,1 +1,106 @@
-{{outlet}}
+<div class="application_container">
+  <div class="layout-row layout-align-center">
+    <div class="layout-column flex-50 flex-md-25 flex-lg-25">
+      {{#paper-card as |card|}}
+        {{card.image
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png"
+          alt="Washed Out"
+          title="Washed Out"
+        }}
+        {{#card.title as |title|}}
+          {{#title.text as |text|}}
+            {{#text.headline}}Icon action buttons{{/text.headline}}
+          {{/title.text}}
+        {{/card.title}}
+        {{#card.content}}
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+        {{/card.content}}
+        {{#card.actions}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "favorite"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "settings"}}
+            {{#paper-button iconButton=true}}
+              {{paper-icon "share"}}
+            {{/paper-button}}
+          {{/paper-button}}
+        {{/card.actions}}
+      {{/paper-card}}
+      {{#paper-card as |card|}}
+        {{card.image
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png"
+          alt="Washed Out"
+          title="Washed Out"
+        }}
+        {{#card.title as |title|}}
+          {{#title.text as |text|}}
+            {{#text.headline}}Icon action buttons{{/text.headline}}
+          {{/title.text}}
+        {{/card.title}}
+        {{#card.content}}
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+        {{/card.content}}
+        {{#card.actions}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "favorite"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "settings"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "share"}}
+          {{/paper-button}}
+        {{/card.actions}}
+      {{/paper-card}}
+    </div>
+    <div class="layout-column flex-50 flex-md-25 flex-lg-25">
+      {{#paper-card as |card|}}
+        {{card.image
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png"
+          alt="Washed Out"
+          title="Washed Out"
+        }}
+        {{#card.title as |title|}}
+          {{#title.text as |text|}}
+            {{#text.headline}}Icon action buttons{{/text.headline}}
+          {{/title.text}}
+        {{/card.title}}
+        {{#card.content}}
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+        {{/card.content}}
+        {{#card.actions}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "favorite"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "settings"}}
+          {{/paper-button}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "share"}}
+          {{/paper-button}}
+        {{/card.actions}}
+      {{/paper-card}}
+    </div>
+  </div>
+</div>
+
+<style>
+  .fakeHeight {
+    height: 1800px;
+  }
+</style>
+<div class="fakeHeight"></div>
