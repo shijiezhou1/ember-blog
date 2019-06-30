@@ -9,24 +9,22 @@
       options=sizes
       label="Size"
       required=true
-      selected=pizzaSize
-      onChange=(action (mut pizzaSize)) as |size|
+      selected=formSize
+      onChange=(action (mut formSize)) as |size|
     }}
       {{size}}
     {{/paper-select}}
   </div>
-  {{#if pizzaSize}}
+  {{#if formSize}}
     <div class="layout-row layout-align-center">
       CURRENT NUM:
-      {{pizzaSize}}
+      {{formSize}}
     </div>
   {{/if}}
-
   {{#each formLists as |value key|}}
     <div class="layout-row layout-align-center">
-      <br>key === {{key}}
-      <br>value address === {{value.address}}
-
+      <br />key === {{key}}
+      <br />value address === {{value.address}}
       {{paper-input
         label=value.name
         value=value.address
@@ -35,9 +33,9 @@
       }}
     </div>
   {{/each}}
-
   <div class="layout-row layout-align-center">
-    {{#paper-button onClick=(action "flatButton")}}Button with action{{/paper-button}}
+    {{#paper-button onClick=(action "flatButton")}}
+      Button with action
+    {{/paper-button}}
   </div>
-
 </div>
