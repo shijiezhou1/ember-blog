@@ -1,5 +1,45 @@
 <div class="application_container">
   <div class="layout-row layout-align-center">
-    <h3>tech</h3>
+    <h3>
+      tech
+    </h3>
   </div>
+  <div class="layout-row layout-align-center">
+    {{#paper-select
+      options=sizes
+      label="Size"
+      required=true
+      selected=pizzaSize
+      onChange=(action (mut pizzaSize)) as |size|
+    }}
+      {{size}}
+    {{/paper-select}}
+  </div>
+  {{#if pizzaSize}}
+    <div class="layout-row layout-align-center">
+      CURRENT NUM:
+      {{pizzaSize}}
+    </div>
+  {{/if}}
+
+  {{#each formLists as |value key|}}
+    <div class="layout-row layout-align-center">
+      <br>key === {{key}}
+      <br>value name ==== {{value.name}}
+      <br>value value === {{value.value}}
+      <br>value value === {{value.address}}
+
+      {{paper-input
+        label=value.name
+        value=value.address
+        onChange=(action (mut value.address))
+        required=true
+      }}
+    </div>
+  {{/each}}
+
+  <div class="layout-row layout-align-center">
+    {{#paper-button onClick=(action "flatButton")}}Button with action{{/paper-button}}
+  </div>
+
 </div>
