@@ -15,6 +15,8 @@ module.exports = {
     browser: true
   },
   rules: {
+    'ember/no-observers': 1,
+    'no-console': 1
   },
   overrides: [
     // node files

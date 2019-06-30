@@ -11,7 +11,7 @@ import { observer, computed } from "@ember/object";
  * @class tech
  */
 export default Controller.extend({
-  pizzSizeResult: observer('pizzaSize', function () {
+  pizzSizeResult: computed('pizzaSize', function () {
     return this.get('pizzaSize');
   }),
   sizes: A([
