@@ -1,0 +1,50 @@
+{{#loader}}{{/loader}}
+<div class="layout-row layout-align-space-around-center">
+  <div class="flex">
+    <img
+      class="application_tmp_img"
+      alt="blog"
+      src="https://www.shijiezhou.com/images/newlogo.png"
+    />
+
+  </div>
+  <div class="flex-50"></div>
+  <div class="flex">
+    <i class="material-icons">
+      search
+    </i>
+    <i class="material-icons">
+      notification_important
+    </i>
+    <img
+      src="https://cdn-images-1.medium.com/fit/c/64/64/0*b90Ej2bAcyCdYYuY"
+      alt="user image"
+      width="30px"
+      height="30px"
+    />
+
+  </div>
+</div>
+<div class="layout-row layout-align-center">
+  {{#paper-button onClick=(action "HOME")}}
+    HOME
+  {{/paper-button}}
+  {{#paper-button onClick=(action "SELF")}}
+    SELF
+  {{/paper-button}}
+  {{#paper-button onClick=(action "TECH")}}
+    TECH
+  {{/paper-button}}
+  {{#paper-button onClick=(action "HEATED")}}
+    HEATED
+  {{/paper-button}}
+  {{#paper-button onClick=(action "DESIGN")}}
+    DESIGN
+  {{/paper-button}}
+  {{#paper-button onClick=(action "CULTURE")}}
+    CULTURE
+  {{/paper-button}}
+  {{#paper-button onClick=(action "MORE")}}
+    MORE
+  {{/paper-button}}
+</div>
