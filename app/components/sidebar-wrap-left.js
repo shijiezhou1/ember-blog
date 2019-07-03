@@ -17,12 +17,5 @@ export default Component.extend({
    * @public
    *
    */
-  classNames: ['layout-row flex-20 application-left-bar hide-sm hide-xs'],
-  /**
-   * The first
-   *
-   * @property {String} first
-   * @private
-   */
-  first: 'first'
+  classNames: ['layout-row flex-20 application-left-bar hide-sm hide-xs']
 });
