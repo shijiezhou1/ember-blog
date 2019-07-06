@@ -21,6 +21,7 @@ export default Component.extend({
     return contacts;
   }),
   actions: {
+    //COVERT THAT TO BE LINK INSTEAD OF FUNCTION
     javascript() {
       console.log('ok - javascript');
     },
