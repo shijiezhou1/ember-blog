@@ -1,5 +1,14 @@
 @import 'ember-paper';
 
+@media only screen and (max-width: 960px) {
+  .application_float_card_left {
+    display: none
+  }
+  .application_float_card_right {
+    display: none
+  }
+}
+
 .application_nav {
   top: 0px;
   left: 0px;
@@ -33,5 +42,5 @@
 }
 
 .application_container {
-  margin-top: 8%;
+  margin-top: 135px;
 }
