@@ -22,7 +22,8 @@ export default Component.extend({
   }),
   actions: {
     redirectToLink(link) {
-      console.log(link)
+      console.log(link);
+      this.get('router').transitionTo(link);
     }
   }
 });
