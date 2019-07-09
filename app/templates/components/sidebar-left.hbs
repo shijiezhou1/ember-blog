@@ -2,9 +2,14 @@
   {{#paper-list}}
     {{#paper-subheader}}Navigation{{/paper-subheader}}
     {{#each listData as |item|}}
-      {{#paper-item class="md-body-2" onClick=(action item.name)}}
+      {{#paper-item
+        class="md-body-2"
+        onClick=(action "redirectToLink" item.name)
+      }}
         <div class="md-list-item-text">
-          <div>{{item.name}}</div>
+          <div>
+            # {{item.name}}
+          </div>
         </div>
       {{/paper-item}}
     {{/each}}

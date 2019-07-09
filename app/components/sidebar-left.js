@@ -1,11 +1,11 @@
 import Component from '@ember/component';
-import {computed} from '@ember/object';
-import {A} from '@ember/array';
+import { computed } from '@ember/object';
+import { A } from '@ember/array';
 
 export default Component.extend({
   classNames: ['application_float_card_left'],
-  numOfRows: 3,
-  listInfo: A(['javascript', 'typescript', 'vue']),
+  numOfRows: 5,
+  listInfo: A(['javascript', 'typescript', 'vuejs', 'java', 'emberjs', 'reactjs']),
   listData: computed('numOfRows', function () {
     let contacts = [];
     let numOfRows = this.get('numOfRows');
@@ -21,15 +21,8 @@ export default Component.extend({
     return contacts;
   }),
   actions: {
-    //COVERT THAT TO BE LINK INSTEAD OF FUNCTION
-    javascript() {
-      console.log('ok - javascript');
-    },
-    typescript() {
-      console.log('ok - typescript');
-    },
-    vue() {
-      console.log('ok - vue');
+    redirectToLink(link) {
+      console.log(link)
     }
   }
 });
