@@ -7,12 +7,15 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
-  this.route('home', { path: '/home' }, function () {
-    this.route('view', { path: ':home_id' });
-  });
-  this.route('tech');
-  this.route('design');
-  this.route('culture');
+  // this.route('home', { path: '/home' }, function () {
+  //   this.route('view', { path: ':home_id' });
+  // });
+
+  this.route('posts', {path: '/posts/:post_id'});
+
+  // this.route('tech');
+  // this.route('design');
+  // this.route('culture');
 });
 
 export default Router;

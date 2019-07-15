@@ -1,4 +1,16 @@
-{{nav}}
+{{!-- {{nav}}
 {{sidebar-left}}
 {{sidebar-right}}
+{{outlet}} --}}
+
+<h2 id="title">
+  Welcome to Ember mirage
+</h2>
+{{#each model as |post|}}
+  {{#link-to "posts" post.id}}
+    {{post.title}}
+  {{/link-to}}
+  <br />
+{{/each}}
+<br />
 {{outlet}}
