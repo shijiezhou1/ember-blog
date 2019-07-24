@@ -77,6 +77,7 @@ export default Component.extend({
   
   didInsertElement() {},
   
+  // wait until the template is all rendering
   didRender() {},
   
   // ON Re-render

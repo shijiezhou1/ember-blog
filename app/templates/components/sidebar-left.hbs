@@ -1,14 +1,14 @@
 <div class="sidebar-index">
   {{#paper-list}}
     {{#paper-subheader}}Navigation{{/paper-subheader}}
-    {{#each listData as |item|}}
+    {{#each category as |cat|}}
       {{#paper-item
         class="md-body-2"
-        onClick=(action "redirectToLink" item.name)
+        onClick=(action "redirectToLink" cat.title)
       }}
         <div class="md-list-item-text">
           <div>
-            # {{item.name}}
+            # {{cat.title}}
           </div>
         </div>
       {{/paper-item}}

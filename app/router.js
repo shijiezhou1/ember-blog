@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('tech');
   this.route('design');
   this.route('culture');
+  this.route('category');
 });
 
 export default Router;

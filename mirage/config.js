@@ -42,6 +42,9 @@ export default function () {
   //collection of data
   this.get('/posts', function (schema, request) {
     return schema.posts.all();
-  })
+  });
 
+  this.get('/categories', function (schema, request) {
+    return schema.categories.all();
+  })
 }
