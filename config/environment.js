@@ -22,7 +22,7 @@ module.exports = function(environment) {
       // when it is created
     }
   };
-
+  //TURN OFF MIRAGE WHEN SERVER IS ON
   ENV['ember-cli-mirage'] = { enabled: true, autostart: true };
 
   if (environment === 'development') {
