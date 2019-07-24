@@ -29,10 +29,9 @@ export default function () {
     return schema.homes.find(request.params.id);
   });
 
-
   //collection of data
   this.get('/homes', (schema, request) => {
-    return schema.homes.findAll(schema);
+    return schema.homes.all();
   });
 
   //single data
