@@ -6,7 +6,6 @@ export default Route.extend({
   setupController(controller, model) {
     this._super(...arguments);
     controller.set('post', this.store.findAll('post'));
-    controller.set('home', this.store.findAll('home'));
     controller.set('category', this.store.findAll('category'));
   }
 });
