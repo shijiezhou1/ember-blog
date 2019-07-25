@@ -4,7 +4,7 @@ export default [
     "title": "I'm Running to Reform the W3C's Tag",
     "text": "Some TextSome TextSome The titles of Washed Out's breakthrough song and the first single from Paracosm share two most important words in Ernest Greene's musical language: feel it. It's a simple request, as wel It's a simple request, as well",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
-    "iconButtonList": ["favorite", "settings", "share"],
+    "iconButtonList": {favorite: "favorite", settings: "settings", share: "share"},
     "categoryList": [],
     "viewCount": 2
   },
@@ -13,7 +13,7 @@ export default [
     "title": "Rails is omakase",
     "text": "Other text",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
-    "iconButtonList": [],
+    "iconButtonList": {favorite: "favorite", settings: "settings", share: "share"},
     "categoryList": [],
     "viewCount": 0
   },
@@ -22,7 +22,7 @@ export default [
     "title": "Master infor",
     "text": "Other random text",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
-    "iconButtonList": [],
+    "iconButtonList": {favorite: "favorite", settings: "settings", share: "share"},
     "categoryList": [],
     "viewCount": 1
   }
