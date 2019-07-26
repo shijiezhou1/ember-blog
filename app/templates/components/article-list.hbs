@@ -1,8 +1,9 @@
 {{#each post as |value idx|}}
   <div class="eachCardStyle">
     {{#paper-card as |card|}}
-      <a class="postTitleContentStyle" href="#" onClick={{action "goToPost" idx}}>
+    <a class="postTitleContentStyle" href="#" onClick={{action "goToPost" idx}}>
       {{card.image src=value.img alt=value.title title=value.title}}
+      <a class="postTitleContentStyle" href="#" onClick={{action "goToPost" idx}}>
         {{#card.title as |title|}}
           {{#title.text as |text|}}
             {{#text.headline}}{{value.title}}{{/text.headline}}
@@ -22,7 +23,7 @@
           {{paper-icon value.iconButtonList.settings}}
         {{/paper-button}}
         {{#paper-button iconButton=true}}
-{{!--          TODO using ember social share to embeded the social media sharing option --}}
+        {{!--          TODO using ember social share to embeded the social media sharing option --}}
           {{paper-icon value.iconButtonList.share}}
         {{/paper-button}}
       {{/card.actions}}
