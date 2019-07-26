@@ -3,7 +3,6 @@
     {{#paper-card as |card|}}
     <a class="postTitleContentStyle" href="#" onClick={{action "goToPost" idx}}>
       {{card.image src=value.img alt=value.title title=value.title}}
-      <a class="postTitleContentStyle" href="#" onClick={{action "goToPost" idx}}>
         {{#card.title as |title|}}
           {{#title.text as |text|}}
             {{#text.headline}}{{value.title}}{{/text.headline}}
