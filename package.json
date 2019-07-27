@@ -16,7 +16,8 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint app/",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "clean": "rm -rf tmp/ dist/ node_modules/ package-lock.json"
   },
   "devDependencies": {
     "@ember/jquery": "^0.6.0",
@@ -43,6 +44,7 @@
     "ember-paper": "^1.0.0-beta.26",
     "ember-qunit": "^4.4.1",
     "ember-resolver": "^5.0.1",
+    "ember-social-share": "^0.3.5",
     "ember-source": "~3.11.1",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
