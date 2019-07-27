@@ -1,14 +1,19 @@
 import Component from '@ember/component';
-import { computed } from "@ember/object";
 
 export default Component.extend( {
-  tagName: "",
-  hover: computed( '', () => {
-    
-  } ),
+  classNameBindings: ['mdWhiteframe_10dp'],
+  mdWhiteframe_10dp: false,
+  mouseEnter(){
+    //md-whiteframe-15dp
+    this.set('mdWhiteframe_10dp', true);
+  },
+  mouseLeave() {
+    this.set('mdWhiteframe_10dp', false);
+  },
   actions: {
     goToPost( id ) {
       console.log( 'this is not right' + id );
-    }
+    },
+
   }
 } );

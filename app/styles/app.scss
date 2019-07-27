@@ -45,22 +45,33 @@
   margin-top: 110px;
 }
 
-.eachCardStyle {
-  width: 50%;
-  md-card:hover {
-
-  }
-  md-card a {
-    text-decoration: none;
-    color: black;
-    :hover {
-
-    }
-  }
-}
-
 .postTitleContentStyle {
   img.md-card-image {
     width: 100%;
+  }
+}
+
+.fakeHeight {
+  height: 1800px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+
+  .singleArticleList {
+    width: 50%;
+    md-card:hover {
+
+    }
+    md-card a {
+      text-decoration: none;
+      color: black;
+
+      :hover {
+
+      }
+    }
   }
 }
