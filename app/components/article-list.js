@@ -1,14 +1,18 @@
 import Component from '@ember/component';
 
 export default Component.extend( {
-  classNameBindings: ['mdWhiteframe_10dp'],
+  classNames: ['singleArticleList'],
+  /**
+   * This variable is class name from material design.
+   * true: md-whiteframe-10dp
+   * false: empty
+   */
   mdWhiteframe_10dp: false,
-  mouseEnter(){
-    //md-whiteframe-15dp
-    this.set('mdWhiteframe_10dp', true);
+  mouseEnter() {
+    this.set( 'mdWhiteframe_10dp', true );
   },
   mouseLeave() {
-    this.set('mdWhiteframe_10dp', false);
+    this.set( 'mdWhiteframe_10dp', false );
   },
   actions: {
     goToPost( id ) {

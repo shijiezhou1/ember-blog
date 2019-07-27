@@ -58,6 +58,43 @@ Specify what it takes to deploy your app.
 
 ## Ember Component lifecycle
 
+```javascript 1.8
+Touch; touchStart();
+touchMove();
+touchEnd();
+touchCancel();
+Keyboard; events;
+
+keyDown();
+keyUp();
+keyPress();
+Mouse; events;
+
+mouseDown();
+mouseUp();
+contextMenu();
+click();
+doubleClick();
+mouseMove();
+focusIn();
+focusOut();
+mouseEnter();
+mouseLeave();
+Form; submit();
+change();
+focusIn();
+focusOut();
+input();
+HTML5; drag; and; drop; dragStart();
+drag();
+dragEnter();
+dragLeave();
+dragOver();
+dragEnd();
+drop()
+```
+
+
 ```html
 import Component from '@ember/component';
 
