@@ -10,11 +10,11 @@
 }
 
 .application_nav {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   position: fixed;
   background: white;
-  right: 0px;
+  right: 0;
   z-index: 10;
 }
 
@@ -47,6 +47,16 @@
 
 .eachCardStyle {
   width: 50%;
+  md-card:hover {
+
+  }
+  md-card a {
+    text-decoration: none;
+    color: black;
+    :hover {
+
+    }
+  }
 }
 
 .postTitleContentStyle {
