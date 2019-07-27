@@ -15,8 +15,4 @@ Router.map(function () {
   this.route('category');
 });
 
-Router.reopen({
-  location: 'hash'
-});
-
 export default Router;
