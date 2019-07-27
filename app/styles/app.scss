@@ -56,22 +56,19 @@
 }
 
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px;
+  width: 300px;
+}
 
-  .singleArticleList {
-    width: 50%;
-    md-card:hover {
+.singleArticleList {
+  md-card:hover {
 
-    }
-    md-card a {
-      text-decoration: none;
-      color: black;
+  }
+  md-card a {
+    text-decoration: none;
+    color: black;
 
-      :hover {
+    :hover {
 
-      }
     }
   }
 }

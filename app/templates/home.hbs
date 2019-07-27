@@ -1,7 +1,12 @@
 <div class="application_container layout-row layout-align-center">
   <div class="flex-container">
-    {{#each post as |value idx|}}
-      {{article-list value=value idx=idx}}
+    {{#each evenPost as |value|}}
+      {{article-list value=value}}
+    {{/each}}
+  </div>
+  <div class="flex-container">
+    {{#each oddPost as |value|}}
+      {{article-list value=value}}
     {{/each}}
   </div>
 </div>
