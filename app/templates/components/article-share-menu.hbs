@@ -17,11 +17,11 @@
 {{!--    {{#actions.action}}{{#reddit-share-button}}Share{{/reddit-share-button}}{{/actions.action}}--}}
 {{!--  {{/dial.actions}}--}}
 {{!--{{/paper-speed-dial}}--}}
-{{!-- TODO adding all the setting for all the social media element tag.--}}
+{{!-- TODO adding all the setting for all the social media element tag. but the linkedin seems bad and the email is not working properly--}}
 {{#ember-popover event="click"}}
-  {{#fb-share-button}}Share{{/fb-share-button}}<br>
-  {{#twitter-share-button}}Tweet{{/twitter-share-button}}<br>
-  {{#linkedin-share-button}}Share{{/linkedin-share-button}}<br>
-  {{#email-share-button}}Share{{/email-share-button}}<br>
-  {{#reddit-share-button}}Share{{/reddit-share-button}}<br>
+  {{#fb-share-button url=url quote=quote}}Share{{/fb-share-button}}<br>
+  {{#twitter-share-button url=url title=quote via=url}}Tweet{{/twitter-share-button}}<br>
+  {{#linkedin-share-button title=quote text=text image=imageUrl}}Share{{/linkedin-share-button}}<br>
+  {{#email-share-button title=quote text=text}}Share{{/email-share-button}}<br>
+  {{#reddit-share-button title=quote url=url}}Share{{/reddit-share-button}}<br>
 {{/ember-popover}}
