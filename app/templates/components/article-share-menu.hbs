@@ -1,0 +1,22 @@
+{{#paper-speed-dial
+    animation=animation direction=direction
+    open=open onToggle=(action (mut open)) as |dial|}}
+  {{#dial.trigger}}
+  {{!--    {{#paper-button}}--}}
+  {{!--      {{paper-icon "setting"}}--}}
+  {{!--    {{/paper-button}}--}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "share"}}
+    {{/paper-button}}
+  {{/dial.trigger}}
+
+  {{#dial.actions as |actions|}}
+    {{#actions.action}}{{#fb-share-button}}Share{{/fb-share-button}}{{/actions.action}}
+    {{#actions.action}}{{#vk-share-button}}Share{{/vk-share-button}}{{/actions.action}}
+    {{#actions.action}}{{#twitter-share-button}}Tweet{{/twitter-share-button}}{{/actions.action}}
+    {{#actions.action}}{{#linkedin-share-button}}Share{{/linkedin-share-button}}{{/actions.action}}
+    {{#actions.action}}{{#gplus-share-button}}Share{{/gplus-share-button}}{{/actions.action}}
+    {{#actions.action}}{{#email-share-button}}Share{{/email-share-button}}{{/actions.action}}
+    {{#actions.action}}{{#reddit-share-button}}Share{{/reddit-share-button}}{{/actions.action}}
+  {{/dial.actions}}
+{{/paper-speed-dial}}

@@ -18,6 +18,8 @@ export default Component.extend( {
     goToPost( id ) {
       console.log( 'this is not right' + id );
     },
-
+    showDialog() {
+      console.log( 'did u wanna share?' )
+    }
   }
 } );

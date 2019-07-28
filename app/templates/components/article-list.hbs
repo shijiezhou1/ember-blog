@@ -11,11 +11,10 @@
     {{/card.content}}
   </a>
   {{#card.actions}}
+  {{!--    TODO need to fixed the share menu space--}}
     {{#paper-button iconButton=true}}
       {{paper-icon value.iconButtonList.favorite}}
     {{/paper-button}}
-    {{#paper-button iconButton=true}}
-      {{paper-icon value.iconButtonList.share}}
-    {{/paper-button}}
+    {{article-share-menu}}
   {{/card.actions}}
 {{/paper-card}}
