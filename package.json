@@ -46,6 +46,7 @@
     "ember-resolver": "^5.0.1",
     "ember-social-share": "^0.3.5",
     "ember-source": "~3.11.1",
+    "ember-tooltips": "^3.3.3",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
     "loader.js": "^4.7.0",

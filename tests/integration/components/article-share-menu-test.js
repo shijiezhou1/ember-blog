@@ -14,13 +14,5 @@ module( 'Integration | Component | article-share-menu', function ( hooks ) {
 
     assert.equal( this.element.textContent.trim(), '' );
 
-    // Template block usage:
-    await render( hbs`
-      <ArticleShareMenu>
-        template block text
-      </ArticleShareMenu>
-    ` );
-
-    assert.equal( this.element.textContent.trim(), 'template block text' );
   } );
 } );
