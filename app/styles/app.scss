@@ -60,15 +60,16 @@
 }
 
 .singleArticleList {
-  md-card:hover {
-
-  }
   md-card a {
     text-decoration: none;
     color: black;
-
-    :hover {
-
-    }
   }
+}
+
+.singleArticleList:nth-child(odd) {
+
+}
+
+.singleArticleList:nth-child(even) {
+
 }

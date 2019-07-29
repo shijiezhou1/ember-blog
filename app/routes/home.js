@@ -12,6 +12,7 @@ export default Route.extend({
    * @param model
    */
   setupController: function (controller, model) {
+    // controller.set('post', model);
     var evenArr = A([]),
       oddArr = A([]);
     model.forEach((value, index) => {
