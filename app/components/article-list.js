@@ -16,7 +16,7 @@ export default Component.extend( {
   },
   actions: {
     goToPost( id ) {
-      console.log( 'this is not right' + id );
+      console.log( 'current select post id: ' + id );
     },
     showDialog() {
       console.log( 'did u wanna share?' )
