@@ -15,8 +15,9 @@ export default Component.extend( {
     this.set( 'mdWhiteframe_10dp', false );
   },
   actions: {
-    goToPost( id ) {
+    onClick(id) {
       console.log( 'current select post id: ' + id );
+      this.get('submit')(id);
     },
     showDialog() {
       console.log( 'did u wanna share?' )

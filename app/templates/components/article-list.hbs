@@ -1,5 +1,5 @@
 {{#paper-card class=mdWhiteframe_10dp as |card|}}
-  <a class="postTitleContentStyle" href="#" onClick={{action "goToPost" value.id}}>
+  <a class="postTitleContentStyle" href="javascript:void(0);" onClick={{action articleClick value.id}}>
     {{card.image  src=value.img alt=value.title title=value.title}}
     {{#card.title as |title|}}
       {{#title.text as |text|}}
