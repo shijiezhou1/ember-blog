@@ -9,7 +9,7 @@ import Route from '@ember/routing/route';
  * @extends ember/routing/route
  */
 export default Route.extend({
-  init(){
-    this._super(...arguments);
-  },
+  model() {
+    // return this.store.findAll('tech');
+  }
 });

@@ -1,15 +1,16 @@
-<h3>
-  Welcome to this post
-</h3>
-{{!<h2 id="title">}}
-{{!  Welcome to Ember mirage}}
-{{!</h2>}}
-{{!--{{#each model as |post|}}--}}
-{{!--  {{#link-to "posts" post.id}}--}}
-{{!--    {{post.title}}--}}
-{{!--  {{/link-to}}--}}
-{{!  <br />}}
-{{!--{{/each}}--}}
-{{!<br />}}
-{{!--Title:{{model.title}}<br>--}}
-{{!--Text:{{model.text}}<br>--}}
+<div>
+  <h3>
+    {{model.title}}
+  </h3>
+
+  {{!-- {{#paper-card as |card|}}
+    {{#card.title as |title|}}
+      {{#title.text as |text|}}
+        {{#text.headline}}{{model.title}}{{/text.headline}}
+        {{#text.subhead}}{{model.subhead}}{{/text.subhead}}
+      {{/title.text}}
+      {{title.media size="lg" src=model.img alt=model.title title=model.title}}
+    {{/card.title}}
+    {{#card.content}}{{model.text}}{{/card.content}}
+  {{/paper-card}} --}}
+</div>
