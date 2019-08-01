@@ -16,11 +16,10 @@ export default Component.extend( {
   },
   actions: {
     onClick(id) {
-      console.log( 'current select post id: ' + id );
       this.get('submit')(id);
     },
     showDialog() {
-      console.log( 'did u wanna share?' )
+      // console.log( 'did u wanna share?' )
     }
   }
 } );

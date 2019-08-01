@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
 
 export default Component.extend({
   classNames: ['application_float_card_left'],
@@ -9,7 +8,6 @@ export default Component.extend({
   },
   actions: {
     redirectToLink(link) {
-      console.log(link);
       this.get('router').transitionTo(`home/${link}`);
     }
   }

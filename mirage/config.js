@@ -30,7 +30,7 @@ export default function () {
   });
 
   //collection of data
-  this.get('/homes', (schema, request) => {
+  this.get('/homes', (schema) => {
     return schema.homes.all();
   });
 
@@ -40,11 +40,11 @@ export default function () {
   });
 
   //collection of data
-  this.get('/posts', function (schema, request) {
+  this.get('/posts', function (schema) {
     return schema.posts.all();
   });
 
-  this.get('/categories', function (schema, request) {
+  this.get('/categories', function (schema) {
     return schema.categories.all();
   })
 }

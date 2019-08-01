@@ -30,7 +30,7 @@ export default Controller.extend({
 
   actions: {
     flatButton() {
-      console.log(this.get('formLists'));
+      // console.log(this.get('formLists'));
     }
   }
 });
