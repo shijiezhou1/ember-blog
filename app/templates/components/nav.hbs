@@ -26,25 +26,22 @@
   </div>
 </div>
 <div class="layout-row layout-align-center">
-  {{#paper-button onClick=(action "HOME")}}
+  {{#paper-button onClick=(action onRoute "home")}}
     HOME
   {{/paper-button}}
-  {{#paper-button onClick=(action "SELF")}}
+  {{#paper-button onClick=(action onRoute "self")}}
     SELF
   {{/paper-button}}
-  {{#paper-button onClick=(action "TECH")}}
+  {{#paper-button onClick=(action onRoute "tech")}}
     TECH
   {{/paper-button}}
-  {{#paper-button onClick=(action "HEATED")}}
+  {{#paper-button onClick=(action onRoute "heated")}}
     HEATED
   {{/paper-button}}
-  {{#paper-button onClick=(action "DESIGN")}}
+  {{#paper-button onClick=(action onRoute "design")}}
     DESIGN
   {{/paper-button}}
-  {{#paper-button onClick=(action "CULTURE")}}
-    CULTURE
-  {{/paper-button}}
-  {{#paper-button onClick=(action "MORE")}}
+  {{#paper-button onClick=(action onRoute "more")}}
     MORE
   {{/paper-button}}
 </div>

@@ -9,9 +9,10 @@ const Router = EmberRouter.extend({
 Router.map(function () {
   this.route('post', { path: '/post/:post_id' });
   this.route('home');
+  this.route('self');
   this.route('tech');
+  this.route('heated');
   this.route('design');
-  this.route('culture');
   this.route('category');
 });
 
