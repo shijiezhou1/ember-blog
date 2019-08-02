@@ -8,6 +8,8 @@ export default Component.extend( {
    * false: empty
    */
   mdWhiteframe_10dp: false,
+
+  oneTimeIcon: 'favorite_border',
   mouseEnter() {
     this.set( 'mdWhiteframe_10dp', true );
   },

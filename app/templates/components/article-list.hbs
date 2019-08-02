@@ -11,8 +11,9 @@
     {{/card.content}}
   </a>
   {{#card.actions}}
-    {{#paper-button iconButton=true}}
-      {{paper-icon value.iconButtonList.favorite}}
+{{!--    TODO making api call to add like--}}
+    {{#paper-button iconButton=true onClick=(action (mut oneTimeIcon) "favorite") }}
+      {{paper-icon oneTimeIcon}}
     {{/paper-button}}
     {{#paper-button iconButton=true}}
       {{paper-icon value.iconButtonList.share}}
