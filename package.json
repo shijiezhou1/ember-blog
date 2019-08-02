@@ -43,7 +43,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-paper": "^1.0.0-beta.26",
     "ember-qunit": "^4.5.0",
-    "ember-resolver": "^5.0.1",
+    "ember-resolver": "^5.2.0",
     "ember-social-share": "^0.3.5",
     "ember-source": "~3.11.1",
     "ember-tooltips": "^3.4.0",
