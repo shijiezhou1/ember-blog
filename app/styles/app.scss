@@ -45,9 +45,21 @@
   margin-top: 110px;
 }
 
-.postTitleContentStyle {
+// home/
+.postCardStyle {
   img.md-card-image {
     width: 100%;
+  }
+  .postCardContentStyle{
+    overflow-wrap: break-word;
+  }
+}
+
+// post/1
+.postContentStyle {
+  width: 600px;
+  img {
+    width: inherit;
   }
 }
 
