@@ -7,7 +7,7 @@
       {{/title.text}}
     {{/card.title}}
     {{#card.content class="postCardContentStyle"}}
-      {{value.text}}
+      {{truncate-text value.text limit=140}}
     {{/card.content}}
   </a>
   {{#card.actions}}
