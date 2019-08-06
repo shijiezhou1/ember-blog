@@ -3,7 +3,7 @@ import { A } from '@ember/array';
 
 export default Route.extend({
   model() {
-    return this.store.findAll('post');
+    return this.store.findAll('post', {reload: true});
   },
   /**
    * Create even and odd posts structure
