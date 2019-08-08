@@ -5,17 +5,44 @@ export default [
     "text": "Some TextSome TextSome The titles of Washed Out's breakthrough song and the first single from Paracosm share two most important words in Ernest Greene's musical language: feel it. It's a simple request, as wel It's a simple request, as well",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
-    "iconButtonList": {favorite: "favorite", share: "share"},
+    "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
     "viewCount": 2
   },
   {
     "id": 2,
     "title": "2-Rails is omakase",
-    "text": "#Markdown is cool [link](http://emberjs.com) #Markdown is cool [link](http://emberjs.com) #Markdown is cool [link](http://emberjs.com) ### markdown is here as well",
+    "text": "## chinese won't show \n" +
+      "\n" +
+      "**如果你想参与贡献 TensorFlow，请先查看我们的 [贡献指南](CONTRIBUTING.md)。此项目遵循 TensorFlow\n" +
+      "[项目规范](CODE_OF_CONDUCT.md)。我们期望你能遵循此规范。**\n" +
+      "\n" +
+      "**我们还使用 [GitHub issues](https://github.com/tensorflow/tensorflow/issues) 来跟进 requests 和 bugs。对于一般性问题和讨论请查看 \n" +
+      "[TensorFlow 讨论](https://groups.google.com/a/tensorflow.org/forum/#!forum/discuss)，或直接在 [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow) 提问。**\n" +
+      "\n" +
+      "TensorFlow 项目致力于遵守开源软件开发中普遍接受的最佳实践：\n" +
+      "\n" +
+      "[![CII 最佳实践](https://bestpractices.coreinfrastructure.org/projects/1486/badge)](https://bestpractices.coreinfrastructure.org/projects/1486)\n" +
+      "\n" +
+      "## 中文 不显示 \n" +
+      "\n" +
+      "### abc 官方 构建 \n" +
+      "\n" +
+      "| Build Type      | Status | Artifacts |\n" +
+      "| ---             | ---    | ---       |\n" +
+      "| **Linux CPU**   | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-cc.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-cc.html) | [pypi](https://pypi.org/project/tf-nightly/) |\n" +
+      "| **Linux GPU**   | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-gpu-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-gpu-py3.html) | [pypi](https://pypi.org/project/tf-nightly-gpu/) |\n" +
+      "| **Linux XLA**   | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-xla.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-xla.html) | TBA |\n" +
+      "| **MacOS**       | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/macos-py2-cc.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/macos-py2-cc.html) | [pypi](https://pypi.org/project/tf-nightly/) |\n" +
+      "| **Windows CPU** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-cpu.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-cpu.html) | [pypi](https://pypi.org/project/tf-nightly/) |\n" +
+      "| **Windows GPU** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-gpu.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-gpu.html) | [pypi](https://pypi.org/project/tf-nightly-gpu/) |\n" +
+      "| **Android**     | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/android.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/android.html) | [![Download](https://api.bintray.com/packages/google/tensorflow/tensorflow/images/download.svg)](https://bintray.com/google/tensorflow/tensorflow/_latestVersion) |\n" +
+      "| **Raspberry Pi 0 and 1** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py2.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py2.html) [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py3.html) | [Py2](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp27-none-linux_armv6l.whl) [Py3](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp34-none-linux_armv6l.whl) |\n" +
+      "| **Raspberry Pi 2 and 3** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py2.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py2.html) [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py3.html) | [Py2](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp27-none-linux_armv7l.whl) [Py3](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp34-none-linux_armv7l.whl) |\n"
+    ,
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
     "url": "www.google.com",
-    "iconButtonList": {favorite: "favorite", share: "share"},
+    "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
     "viewCount": 0
   },
@@ -164,7 +191,7 @@ export default [
       "* `ember build`\n",
     "url": "www.google.com",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
-    "iconButtonList": {favorite: "favorite", share: "share"},
+    "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
     "viewCount": 1
   },
@@ -174,18 +201,20 @@ export default [
     "text": "## Second header1 \n" + "## Second header2\n" + "some content \n" + "# first header \n" + "first stuff \n" + "## sub first header \n" + " sub first header \n" + "### third line header \n" + "third line text",
     "url": "www.google.com",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
-    "iconButtonList": {favorite: "favorite", share: "share"},
+    "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
     "viewCount": 1
   },
   {
     "id": 5,
     "title": "5-I'm Running to Reform the W3C's Tag",
-    "text": "Some TextSome TextSome The titles of Washed Out's breakthrough song and the first single from Paracosm share two most important words in Ernest Greene's musical language: feel it. It's a simple request, as wel It's a simple request, as well",
+    "text": "### Second header1 \n" + "## Second header2\n" + "some content \n" + "# first header \n" + "first stuff \n" + "## sub first header \n" + " sub first header \n" + "### third line header \n" + "third line text",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
-    "iconButtonList": {favorite: "favorite", share: "share"},
+    "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
     "viewCount": 2
   },
 ]
+
+

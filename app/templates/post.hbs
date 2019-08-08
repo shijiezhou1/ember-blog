@@ -1,13 +1,13 @@
 <div class="postContentStyle">
-  <img src={{model.img}} alt={{model.title}} draggable="false">
-  <h3>
-    {{model.title}}
-  </h3>
-  {{markdown-to-html model.text}}
+  <button {{action "scrollToDiv"}}>
+    Scroller Button
+  </button>
+  <img src={{model.img}} alt={{model.title}} draggable="false" />
+  {{markdown-to-html
+    markdown=model.text
+    ghCompatibleHeaderId=true
+  }}
 
-  {{!-- TODO manually create jquery to loop through all the h1-h10 tags for index list --}}
-
-{{!--  TODO create a side components - markdown-nav or something like that to render all the markdown index link to the id. when user click on the link, it can reposition to the article location.--}}
   {{!-- {{#paper-card as |card|}}
     {{#card.title as |title|}}
       {{#title.text as |text|}}

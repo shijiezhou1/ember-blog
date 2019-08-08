@@ -3,6 +3,7 @@ import { A } from '@ember/array';
 
 export default Route.extend({
   model() {
+    // TODO it needs a sorting list because it cache last record
     return this.store.findAll('post', {reload: true});
   },
   /**
