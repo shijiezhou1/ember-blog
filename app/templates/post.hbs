@@ -1,18 +1,4 @@
 <div class="postContentStyle">
   <img src={{model.img}} alt={{model.title}} draggable="false" />
-  {{{currentMarkdown}}}
-  {{!-- {{markdown-to-html
-    markdown=model.text
-    ghCompatibleHeaderId=true
-  }} --}}
-  {{!-- {{#paper-card as |card|}}
-    {{#card.title as |title|}}
-      {{#title.text as |text|}}
-        {{#text.headline}}{{model.title}}{{/text.headline}}
-        {{#text.subhead}}{{model.subhead}}{{/text.subhead}}
-      {{/title.text}}
-      {{title.media size="lg" src=model.img alt=model.title title=model.title}}
-    {{/card.title}}
-    {{#card.content}}{{model.text}}{{/card.content}}
-  {{/paper-card}} --}}
+  {{{currentMarkdown.source}}}
 </div>

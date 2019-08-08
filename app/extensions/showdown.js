@@ -16,12 +16,12 @@ export default function () {
   }
   var myext4 = {
     type: 'output',
-    filter: function(source, showdownConvert, Option, make) {
+    filter: function (source, showdownConvert, Option, make) {
 
-      const matchResult = source.match(/(.*)<\/?h[1-6]>/ig);
+      const matchResult = source.match(/<\/?h[1-6](.*)>(.*)<\/?h[1-6]>/ig);
 
-      console.log(matchResult);
-      return source;
+      // console.log(matchResult);
+      return { source: source, catalog: matchResult };
     },
   }
   return [myext1, myext2, myext3, myext4];

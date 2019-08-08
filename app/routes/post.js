@@ -11,7 +11,8 @@ export default Route.extend({
     const converter = new showdown.Converter();
     converter.useExtension(showdownExt);
     const html = converter.makeHtml(model.text);
-    console.log(converter.getAllExtensions());
+
+    // SETTING RESULT FOR RENDER
     controller.set('model', model);
     controller.set('currentMarkdown', html);
   }
