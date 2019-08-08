@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     'block-indentation': false,
     'no-inline-styles': false,
-    'self-closing-void-elements': false
+    'self-closing-void-elements': false,
+    'no-triple-curlies': false
   }
 };

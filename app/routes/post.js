@@ -1,26 +1,6 @@
 import Route from '@ember/routing/route';
 import showdown from 'showdown';
-
-// extension of markdown
-var myext = () => {
-  console.log('here');
-  var myext1 = {
-    type: 'lang',
-    regex: /markdown/g,
-    replace: 'showdown'
-  };
-  var myext2 = {
-    type: 'lang',
-    regex: /love/g,
-    replace: 'fun'
-  };
-  var myext3 = {
-    type: 'output',
-    regex: '<h2 id=(.*)>',
-    replace: '<h2 class="markdown-class" id=$1>'
-  }
-  return [myext1, myext2, myext3];
-}
+import showdownExt from '../extensions/showdown';
 
 export default Route.extend({
   model(param) {
@@ -28,12 +8,10 @@ export default Route.extend({
   },
   setupController(controller, model) {
     showdown.setFlavor('github');
-    showdown.extension('myext', myext);
     const converter = new showdown.Converter();
-    converter.useExtension('myext');
+    converter.useExtension(showdownExt);
     const html = converter.makeHtml(model.text);
     console.log(converter.getAllExtensions());
-    console.log(html);
     controller.set('model', model);
     controller.set('currentMarkdown', html);
   }

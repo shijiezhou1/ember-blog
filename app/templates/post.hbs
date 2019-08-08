@@ -1,13 +1,10 @@
 <div class="postContentStyle">
-  <button {{action "scrollToDiv"}}>
-    Scroller Button
-  </button>
   <img src={{model.img}} alt={{model.title}} draggable="false" />
-  {{markdown-to-html
+  {{{currentMarkdown}}}
+  {{!-- {{markdown-to-html
     markdown=model.text
     ghCompatibleHeaderId=true
-  }}
-
+  }} --}}
   {{!-- {{#paper-card as |card|}}
     {{#card.title as |title|}}
       {{#title.text as |text|}}
