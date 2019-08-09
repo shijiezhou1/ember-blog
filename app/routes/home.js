@@ -4,7 +4,7 @@ import { A } from '@ember/array';
 export default Route.extend({
   model() {
     // TODO it needs a sorting list because it cache last record
-    return this.store.findAll('post', {reload: true});
+    return this.store.findAll('post', { reload: true });
   },
   /**
    * Create even and odd posts structure
@@ -29,6 +29,13 @@ export default Route.extend({
     controller.set('evenPost', evenArr);
     controller.set('oddPost', oddArr);
   },
+  actions: {
+    refreshModel() {
+      this.refresh();
+    }
+  }
+
+
   // renderTemplate() {
   //   this.render('home', {
   //     into: 'application',
