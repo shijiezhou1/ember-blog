@@ -18,10 +18,19 @@ export default function () {
     type: 'output',
     filter: function (source, showdownConvert, Option, make) {
 
-      const matchResult = source.match(/<\/?h[1-6](.*)>(.*)<\/?h[1-6]>/ig);
+      const matchResult = source.match(/<h[1-6](.*)>(.*)<\/?h[1-6]>/ig);
 
-      // console.log(matchResult);
-      return { source: source, catalog: matchResult };
+      // TODO fixed the replace
+      const mapArray = matchResult.map((idx)=> {
+        const idToHref = /id=(?:'|")(.*?)(?:'|")/g;
+        const hTagFront = /<h[1-6]/gi;
+        const hTagBack = /<\/h[1-6]/gi;
+        return idx.replace(hTagFront, '<a').replace(hTagBack, '</a').replace(idToHref, '');
+      });
+
+      // console.log(mapArray);
+
+      return { source: source, catalog: mapArray };
     },
   }
   return [myext1, myext2, myext3, myext4];

@@ -2,18 +2,12 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 
 export default Component.extend({
-  classNames: ['application_float_card_right'],
+  classNames: ['application_float_card_right', 'md-padding'],
   mouseIsIn: false,
-  hello: '',
-
-  // TODO make the component listens to the ember-data
-  didInsertElement() {
-    this._super(...arguments);
-  },
 
   fakeIndex: computed('hello', function () {
-    console.log('compute works!');
-    return 'nothing now';
+    console.log('computed once');
+    return this.get('hello') ? this.get('hello') : "empty now";
   }),
 
   mouseEnter(event) {
@@ -28,8 +22,7 @@ export default Component.extend({
 
   actions: {
     changeHello() {
-      this.set('hello', 'change hello now');
-      console.log(this.hello);
+      this.incrementProperty('hello', 5);
     }
   }
 });

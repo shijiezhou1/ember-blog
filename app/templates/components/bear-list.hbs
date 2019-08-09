@@ -1,0 +1,28 @@
+<div>
+  Bear -
+  (
+  {{totalBears}}
+  )
+</div>
+<div>
+  <ul>
+    {{#each bears as |bear|}}
+      <li role="button" {{action "favorite" bear}}>
+        {{#if bear.favorited}}
+          🥁
+        {{/if}}
+        {{bear.name}}
+      </li>
+    {{/each}}
+  </ul>
+  <button {{action "showMore"}}>
+    Show more
+  </button>
+  <button {{action "checkModel"}}>
+    check Model
+  </button>
+</div>
+
+<br>
+
+You have favorited {{favoritedBears}} Bears
