@@ -1,10 +1,14 @@
-Index:
-<br>
-{{{fakeIndex}}}
-{{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
-{{#sidebar-wrap-left}}{{/sidebar-wrap-left}}
+
+{{!-- HIGHTLIGHT ANIMATION  --}}
+
+<ul>
+{{#each hello as |item idx|}}
+  <li class="directionStyle" role="link" {{action "scrollTopPos" idx}}>{{{item}}}</li>
+{{/each}}
+</ul>
+
 {{#if hasBlock}}
   {{yield}}
 {{/if}}
 
-<button onclick={{action "changeHello"}}>changeHello</button>
+{{!-- <button onclick={{action "changeHello"}}>changeHello</button> --}}

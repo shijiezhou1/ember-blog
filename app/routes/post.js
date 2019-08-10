@@ -9,13 +9,33 @@ export default Route.extend({
   setupController(controller, model) {
     showdown.setFlavor('github');
     const converter = new showdown.Converter();
+
+    // const classMap = {
+    //   h1: 'ui large header',
+    //   h2: 'ui medium header',
+    //   h3: 'ui small header',
+    //   h4: 'ui small header',
+    //   h5: 'ui small header',
+    //   h6: 'ui small header',
+    //   ul: 'ui list',
+    //   li: 'ui item'
+    // }
+
+    // const bindings = Object.keys(classMap).map(key => ({
+    //     type: 'output',
+    //     regex: new RegExp(`<${key}(.*)>`, 'g'),
+    //     replace: `<${key} class="${classMap[key]}" $1>`
+    //   }));
+
+    // converter.useExtension([...bindings]);
+
     converter.useExtension(showdownExt);
     const html = converter.makeHtml(model.text);
 
-    // SETTING RESULT FOR RENDER
+    // // SETTING RESULT FOR RENDER
     controller.set('model', model);
     controller.set('currentMarkdown', html.source);
-    // SETTING INDEX FOR RENDER
+    // // SETTING INDEX FOR RENDER
     controller.set('hello', html.catalog);
   }
   // scrollToDiv() {

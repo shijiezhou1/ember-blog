@@ -13,6 +13,8 @@ export default [
     "id": 2,
     "title": "2-Rails is omakase",
     "text": "## chinese won't show \n" +
+      "- first item \n" +
+      "- second item \n" +
       "\n" +
       "**如果你想参与贡献 TensorFlow，请先查看我们的 [贡献指南](CONTRIBUTING.md)。此项目遵循 TensorFlow\n" +
       "[项目规范](CODE_OF_CONDUCT.md)。我们期望你能遵循此规范。**\n" +
