@@ -62,7 +62,6 @@ export default Component.extend({
       elmnt.classList.add("active");
       const currentIdName = elmnt.childNodes[0].getAttribute('data-attr');
       const targetElement = document.getElementById(currentIdName);
-      // SUBTRACT MARGIN-TOP
       scrollTo(document.body, targetElement.offsetTop, 200);
     }
   }
