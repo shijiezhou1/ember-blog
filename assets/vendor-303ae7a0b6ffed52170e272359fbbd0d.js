@@ -8353,12 +8353,12 @@ return n}
 new t.default("promise-waiter")}),define("ember-test-waiters/waiter-manager",["exports"],function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.register=function(e){t.set(e.name,e)},e.unregister=function(e){t.delete(e.name)},e.getWaiters=function(){return e=t.values(),function(e){if(Array.isArray(e)){for(var t=0,n=new Array(e.length);t<e.length;t++)n[t]=e[t]
 return n}}(e)||function(e){if(Symbol.iterator in Object(e)||"[object Arguments]"===Object.prototype.toString.call(e))return Array.from(e)}(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}()
-var e},e._reset=function(){t.clear()},e.getPendingWaiterState=n,e.hasPendingWaiters=function(){return n().pending>0}
+var e},e._reset=function(){t.clear()},e.getPendingWaiterState=n,e.hasPendingWaiters=r
 var t=new Map
 function n(){var e={pending:0,waiters:{}}
 return t.forEach(function(t){if(!t.waitUntil()){e.pending++
 var n=t.debugInfo()
-e.waiters[t.name]=n||!0}}),e}}),define("ember-text-measurer/services/text-measurer",["exports"],function(e){"use strict"
+e.waiters[t.name]=n||!0}}),e}function r(){return n().pending>0}Ember.Test&&Ember.Test.registerWaiter(function(){return!r()})}),define("ember-text-measurer/services/text-measurer",["exports"],function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 var t=Ember.Service.extend({init:function(){this._super.apply(this,arguments),this.canvas=document.createElement("canvas"),this.ctx=this.canvas.getContext("2d")},width:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null
 return t&&(this.ctx.font=t),this.ctx.measureText(e).width},lines:function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null
