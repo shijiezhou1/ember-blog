@@ -43,7 +43,7 @@
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-paper": "^1.0.0-beta.26",
-    "ember-qunit": "^4.5.0",
+    "ember-qunit": "^4.5.1",
     "ember-resolver": "^5.2.0",
     "ember-social-share": "^0.3.5",
     "ember-source": "~3.12.0",
