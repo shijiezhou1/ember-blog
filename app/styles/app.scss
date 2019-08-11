@@ -6,15 +6,6 @@
   // box-shadow: 2px 3px 8px black;
 }
 
-@media only screen and (max-width: 960px) {
-  .application_float_card_left {
-    display: none
-  }
-  .application_float_card_right {
-    display: none
-  }
-}
-
 .application_nav {
   top: 0;
   left: 0;
@@ -58,7 +49,7 @@
   img.md-card-image {
     width: 100%;
   }
-  .postCardContentStyle{
+  .postCardContentStyle {
     overflow-wrap: break-word;
   }
 }
@@ -67,16 +58,16 @@
 .postContentStyle {
   width: 600px;
   img {
-    width: inherit;
+    // width: inherit;
   }
-}
-
-.fakeHeight {
-  height: 1800px;
 }
 
 .flex-container {
   width: 300px;
+}
+
+.fakeHeight {
+  height: 1800px;
 }
 
 .singleArticleList {
@@ -91,9 +82,62 @@
 }
 
 .singleArticleList:nth-child(odd) {
-
 }
 
 .singleArticleList:nth-child(even) {
+}
 
+@media only screen and (max-width: 414px) {
+  .application_nav {
+    max-width: 414px;
+  }
+  .flex-container {
+    width: 50%;
+  }
+  .menu-list-items {
+    display: block;
+    .button {
+      // TODO fix the button style basic on screen
+    }
+  }
+  .application_container {
+    margin-top: 150px;
+    overflow-x: hidden;
+    max-width: 414px;
+  }
+  .postContentStyle {
+    max-width: 95%;
+    // padding: 0px 10px;
+    > :first-child {
+      width: 100%;
+    }
+    pre {
+      overflow-x: scroll;
+      /* max-width: 414px; */
+      background: #29292e;
+      /* border-radius: 2px; */
+      color: white;
+      /* line-height: 1.42em; */
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 0.7em;
+      /* margin-left: 0px; */
+      padding-top: 6%;
+      padding-bottom: 6%;
+      /* border-radius: 0; */
+      overflow-wrap: normal;
+    }
+    code {
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .application_float_card_left {
+    display: none;
+  }
+  .application_float_card_right {
+    display: none;
+  }
 }
