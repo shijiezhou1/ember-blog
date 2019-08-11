@@ -37,6 +37,7 @@ export default Route.extend({
     controller.set('currentMarkdown', html.source);
     // // SETTING INDEX FOR RENDER
     controller.set('hello', html.catalog);
+
   }
   // scrollToDiv() {
   //   const findAllHeader = $("h1, h2, h3, h4, h5, h6");

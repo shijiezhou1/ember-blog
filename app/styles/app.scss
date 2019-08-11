@@ -79,6 +79,10 @@
 
 .directionStyle {
   cursor: pointer;
+  &.active {
+    color: #007fff;
+    background-color: #ebedef;
+  }
 }
 
 @media only screen and (max-width: 414px) {
