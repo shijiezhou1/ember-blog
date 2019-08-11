@@ -3,7 +3,6 @@
 * {
   scroll-behavior: smooth;
   // border: 0.1px solid black;
-  // box-shadow: 2px 3px 8px black;
 }
 
 .application_nav {
@@ -26,7 +25,7 @@
 .application_float_card_left {
   position: fixed;
   left: 6%;
-  top: 14%;
+  top: 20%;
   width: 12%;
   height: 600px;
   overflow-x: hidden;
@@ -37,7 +36,7 @@
   background-color: white;
   position: fixed;
   right: 6%;
-  top: 14%;
+  top: 20%;
 }
 
 .application_container {
@@ -81,12 +80,6 @@
   cursor: pointer;
 }
 
-.singleArticleList:nth-child(odd) {
-}
-
-.singleArticleList:nth-child(even) {
-}
-
 @media only screen and (max-width: 414px) {
   .application_nav {
     max-width: 414px;
@@ -96,9 +89,6 @@
   }
   .menu-list-items {
     display: block;
-    .button {
-      // TODO fix the button style basic on screen
-    }
   }
   .application_container {
     margin-top: 150px;
@@ -107,24 +97,18 @@
   }
   .postContentStyle {
     max-width: 95%;
-    // padding: 0px 10px;
     > :first-child {
       width: 100%;
     }
     pre {
       overflow-x: scroll;
-      /* max-width: 414px; */
       background: #29292e;
-      /* border-radius: 2px; */
       color: white;
-      /* line-height: 1.42em; */
       padding-left: 10px;
       padding-right: 10px;
       font-size: 0.7em;
-      /* margin-left: 0px; */
       padding-top: 6%;
       padding-bottom: 6%;
-      /* border-radius: 0; */
       overflow-wrap: normal;
     }
     code {
