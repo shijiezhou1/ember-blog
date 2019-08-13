@@ -5,11 +5,11 @@ import $ from 'jquery';
 export default Component.extend({
   // classNames: ['application_float_card_right', 'md-padding', 'md-whiteframe-1dp'],
   mouseIsIn: false,
-
   // fakeIndex: computed('hello', function () {
   //   console.log('computed once');
   //   return this.get('hello') ? this.get('hello') : "empty now";
   // }),
+  prevSectionClick: false,
 
   didInsertElement() {
     this._super(...arguments);
@@ -17,17 +17,18 @@ export default Component.extend({
     this.firstActive();
     // BIND SCROLL
     const listOfTopArr = $(".markdown-header");
+    const contentListArr = $(".directionStyle");
 
-    $(window).on('scroll', function () {
-      const currentPosition = $(this).scrollTop();
+    let self = this;
 
+    $(window).bind('scroll', function () {
+      const scrollPos = $(this).scrollTop();
       for (let i = 0; i < listOfTopArr.length - 1; i++) {
-        console.log(listOfTopArr.eq(i).offset().top);
-        if (currentPosition > listOfTopArr.eq(i).offset().top) {
-          // console.log(i);
-          $(".directionStyle").removeClass("active");
-          const elmnt = document.getElementsByClassName("directionStyle")[i]
-          elmnt.classList.add("active");
+        if (scrollPos < listOfTopArr.eq(0).offset().top) {
+          contentListArr.removeClass('active').eq(0).addClass("active");
+        }
+        else if (scrollPos > listOfTopArr.eq(i).offset().top - 110) {
+          contentListArr.removeClass('active').eq(i).addClass("active");
         }
       }
     });
@@ -35,11 +36,11 @@ export default Component.extend({
 
   willDestroyElement() {
     this._super(...arguments);
-    // UNBIND
+    $(window).unbind('scroll');
   },
 
   firstActive() {
-    document.getElementsByClassName("directionStyle")[0].classList.add("active");
+    $(".directionStyle").removeClass("active").eq(0).addClass("active");
   },
 
   mouseEnter(event) {
@@ -57,12 +58,14 @@ export default Component.extend({
       this.incrementProperty('hello', 5);
     },
     scrollTopPos(id) {
+      $(window).unbind('scroll');
       $(".directionStyle").removeClass("active");
       const elmnt = document.getElementsByClassName("directionStyle")[id]
       elmnt.classList.add("active");
       const currentIdName = elmnt.childNodes[0].getAttribute('data-attr');
       const targetElement = document.getElementById(currentIdName);
       scrollTo(document.body, targetElement.offsetTop, 200);
+      $(window).bind('scroll');
     }
   }
 });
