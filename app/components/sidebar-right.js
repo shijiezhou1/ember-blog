@@ -19,7 +19,7 @@ export default Component.extend({
     const listOfTopArr = $(".markdown-header");
     const contentListArr = $(".directionStyle");
 
-    $(window).on('mousewheel scroll', function () {
+    $(window).on('mousewheel', function () {
         const scrollPos = $(window).scrollTop();
         for (let i = 0; i < listOfTopArr.length - 1; i++) {
           if (scrollPos < listOfTopArr.eq(0).offset().top) {
@@ -32,6 +32,14 @@ export default Component.extend({
           }
         }
     });
+  },
+
+  mouseDown(){
+
+  },
+
+  mouseUp() {
+
   },
 
   willDestroyElement() {
