@@ -1,7 +1,6 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 import $ from 'jquery';
-import { bind } from '@ember/runloop';
 
 export default Component.extend({
   mouseIsIn: false,
@@ -20,12 +19,7 @@ export default Component.extend({
     const listOfTopArr = $(".markdown-header");
     const contentListArr = $(".directionStyle");
 
-    let self = this;
-
-    $(window).on('scroll', function () {
-      if (self.get('shutUp')) {
-        // console.log('please shutUp');
-      } else {
+    $(window).on('mousewheel scroll', function () {
         const scrollPos = $(window).scrollTop();
         for (let i = 0; i < listOfTopArr.length - 1; i++) {
           if (scrollPos < listOfTopArr.eq(0).offset().top) {
@@ -37,7 +31,6 @@ export default Component.extend({
             contentListArr.removeClass('active').eq(listOfTopArr.length - 1).addClass("active");
           }
         }
-      }
     });
   },
 
@@ -65,15 +58,6 @@ export default Component.extend({
       this.incrementProperty('hello', 5);
     },
     scrollTopPos(id) {
-      this.set('shutUp', true);
-
-      // const intersectionObserver = new IntersectionObserver((entries) => {
-      //   let [entry] = entries;
-      //   if (entry.isIntersecting) {
-      //     setTimeout(() => alert(`${entry.target.id} is visible`), 100)
-      //   }
-      // });
-
       $(".directionStyle").removeClass("active");
       const elmnt = document.getElementsByClassName("directionStyle")[id]
       elmnt.classList.add("active");
@@ -82,7 +66,7 @@ export default Component.extend({
       $([document.documentElement, document.body]).animate({
         scrollTop: $(`#${currentIdName}`).offset().top - 100
       }, 200, () => {
-        return this.set('shutUp', false);
+        // console.log('work');
       });
 
     }
