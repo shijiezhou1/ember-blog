@@ -27,7 +27,8 @@
   position: fixed;
   left: 6%;
   top: $floatingCardTop;
-  width: 18%;
+  width: 13.5%;
+  background-color: white;
   max-height: 800px;
   overflow-x: hidden;
 }
@@ -38,6 +39,11 @@
   position: fixed;
   right: 6%;
   top: $floatingCardTop;
+  font-size: 80%;
+  //font-weight: 600;
+  & > ul {
+    list-style: lower-roman;
+  }
 }
 
 .application_container {
