@@ -1,14 +1,8 @@
-{{! TODO find a way to combine application container and flex container together, because we used those tag in three different place already.
-  it is alway locate on the center of the page
- }}
 {{!--TODO using ember content loader to show the loading process instead of waiting--}}
-<div class="flex-container">
-  {{#each evenPost as |value|}}
-    {{article-list value=value articleClick=(action "submit")}}
-  {{/each}}
-</div>
-<div class="flex-container">
-  {{#each oddPost as |value|}}
-    {{article-list value=value articleClick=(action "submit")}}
-  {{/each}}
-</div>
+{{!--<div class="flex-container">--}}
+{{!--  {{#each post as |value|}}--}}
+{{!--    {{article-list value=value articleClick=(action "submit")}}--}}
+{{!--  {{/each}}--}}
+{{!--</div>--}}
+
+{{article-body}}

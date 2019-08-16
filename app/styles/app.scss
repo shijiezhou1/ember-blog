@@ -34,13 +34,11 @@
 }
 
 .application_float_card_right {
-  // border: 1px solid red;
   background-color: white;
   position: fixed;
   right: 6%;
   top: $floatingCardTop;
   font-size: 80%;
-  //font-weight: 600;
   & > ul {
     list-style: lower-roman;
   }
@@ -69,11 +67,15 @@
 }
 
 .flex-container {
-  width: 300px;
-}
-
-.fakeHeight {
-  height: 1800px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  & .singleArticleList:nth-child(odd) {
+    width: 50%;
+  }
+  & .singleArticleList:nth-child(even) {
+    width: 50%;
+  }
 }
 
 .singleArticleList {
@@ -115,11 +117,8 @@
       overflow-x: scroll;
       background: #29292e;
       color: white;
-      padding-left: 10px;
-      padding-right: 10px;
       font-size: 0.7em;
-      padding-top: 6%;
-      padding-bottom: 6%;
+      padding: 6% 10px;
       overflow-wrap: normal;
     }
     code {

@@ -1,0 +1,6 @@
+<div class="flex-container demo-items">
+  {{#each posts as |value|}}
+    {{article-list value=value articleClick=(action "submit")}}
+  {{/each}}
+  {{infinity-loader infinityModel=posts}}
+</div>
