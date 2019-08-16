@@ -1,6 +1,5 @@
 export default function(server) {
-  // server.loadFixtures();
-  // console.log( server );
-  server.createList('category', 1);
-  server.createList('post', 150)
+  server.loadFixtures();
+  // server.createList('category', 5);
+  // server.createList('post', 150)
 }
