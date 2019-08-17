@@ -12,15 +12,6 @@ module('Integration | Component | article-body', function(hooks) {
 
     await render(hbs`<ArticleBody />`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <ArticleBody>
-        template block text
-      </ArticleBody>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), 'Contents Entirely loaded.');
   });
 });

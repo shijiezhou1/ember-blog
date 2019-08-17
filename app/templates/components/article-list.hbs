@@ -1,5 +1,5 @@
 {{#paper-card class=mdWhiteframe_10dp as |card|}}
-  <a class="postCardStyle" href={{href-to 'post' value.id}} >
+  <a class="postCardStyle" href={{href-to "post" value.id}} >
     {{card.image  src=value.img alt=value.title title=value.title}}
     {{#card.title as |title|}}
       {{#title.text as |text|}}
@@ -11,7 +11,7 @@
     {{/card.content}}
   </a>
   {{#card.actions}}
-  {{!--    TODO making api call to add like--}}
+  {{!-- TODO making api call to add like --}}
     {{#paper-button iconButton=true onClick=(action (mut oneTimeIcon) "favorite") }}
       {{paper-icon oneTimeIcon}}
     {{/paper-button}}
