@@ -17,9 +17,6 @@ export default Component.extend( {
     this.set( 'mdWhiteframe_10dp', false );
   },
   actions: {
-    onClick(id) {
-      this.get('submit')(id);
-    },
     showDialog() {
       // console.log( 'did u wanna share?' )
     }

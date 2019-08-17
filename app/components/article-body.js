@@ -8,12 +8,5 @@ export default Component.extend( {
   init() {
     this._super( ...arguments );
     this.posts = this.get( 'infinity' ).model( 'post', {perPage: 5} )
-  },
-
-  actions: {
-    submit() {
-      // TODO need to fixed the problem with routing issues
-      // console.log( ' clicked?' )
-    }
   }
 } );
