@@ -15,10 +15,5 @@ export default Component.extend( {
   },
   mouseLeave() {
     this.set( 'mdWhiteframe_10dp', false );
-  },
-  actions: {
-    showDialog() {
-      // console.log( 'did u wanna share?' )
-    }
   }
 } );
