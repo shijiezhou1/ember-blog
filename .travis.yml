@@ -27,9 +27,10 @@ script:
 # deploy master branch to GitHub pages
 deploy:
   provider: pages
-  skip-cleanup: true
+  skip-cleanup: false
   github-token: $GITHUB_TOKEN
   keep-history: true
+  verbose: true
   on:
     branch: master
   local-dir: dist
