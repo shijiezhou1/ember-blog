@@ -1,6 +1,7 @@
 <div class="sidebar-index">
   {{#paper-list}}
     {{#paper-subheader}}Navigation{{/paper-subheader}}
+    {{paper-divider}}
     {{#each category as |cat|}}
       {{#paper-item
         class="md-body-2"
@@ -13,6 +14,5 @@
         </div>
       {{/paper-item}}
     {{/each}}
-    {{paper-divider}}
   {{/paper-list}}
 </div>
