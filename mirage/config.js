@@ -40,7 +40,17 @@ export default function () {
   });
 
   //collection of data
-  this.get('/posts');
+  this.get('/posts', function (schema, request) {
+    // console.log(request.queryParams);
+    // return schema.posts.all();
+    // console.log(schema.posts.all());
+    let perPage = parseInt(request.queryParams.per_page, 10);
+    let startPage = parseInt(request.queryParams.page, 10);
+    let pageCount = Math.ceil(schema.posts.all().length / perPage);
+    let offset = perPage * (startPage - 1);
+    let subset = schema.posts.all().models.slice(offset, offset + perPage);
+    return { posts: subset, meta: { total_pages: pageCount } };
+  });
 
   this.get('/categories', function (schema) {
     return schema.categories.all();
