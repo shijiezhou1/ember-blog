@@ -23,7 +23,7 @@ module.exports = function(environment) {
     }
   };
   //TURN OFF MIRAGE WHEN SERVER IS ON
-  ENV['ember-cli-mirage'] = { enabled: true, autostart: true };
+  // ENV['ember-cli-mirage'] = { enabled: true, autostart: true };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
