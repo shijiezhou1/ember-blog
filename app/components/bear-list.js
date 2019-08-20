@@ -15,7 +15,7 @@ export default Component.extend({
     return this.get('model.length');
   }),
   bears: computed('model.[]', 'page', function () {
-    console.log(this.page);
+    // console.log(this.page);
     var page = this.get('page');
     return this.get('model').slice(page, page + 5);
   }),
