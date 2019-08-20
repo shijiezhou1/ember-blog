@@ -40,9 +40,7 @@ export default function () {
   });
 
   //collection of data
-  this.get('/posts', function (schema) {
-    return schema.posts.all();
-  });
+  this.get('/posts');
 
   this.get('/categories', function (schema) {
     return schema.categories.all();

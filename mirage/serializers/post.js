@@ -1,9 +1,8 @@
 import ApplicationSerializer from './application';
 
 export default ApplicationSerializer.extend({
-  embed: true,
 
-  serialize({ models }, request) {
+  serialize({models}, request) {
     let perPage = parseInt(request.queryParams.per_page, 10);
     let startPage = parseInt(request.queryParams.page, 10);
 
