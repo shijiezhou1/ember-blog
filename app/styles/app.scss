@@ -76,6 +76,16 @@
   & .singleArticleList:nth-child(even) {
     width: 50%;
   }
+  & .loadingStyle:nth-child(odd) {
+    width: 45%;
+    margin-right:10px;
+    margin-bottom:10px;
+  }
+  & .loadingStyle:nth-child(even) {
+    width: 45%;
+    margin-right:10px;
+    margin-bottom: 10px;
+  }
 }
 
 .singleArticleList {
@@ -135,3 +145,5 @@
     display: none;
   }
 }
+
+@import "ember-content-placeholders";

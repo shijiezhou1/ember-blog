@@ -39,6 +39,7 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-template-lint": "^1.0.0-beta.3",
     "ember-cli-uglify": "^3.0.0",
+    "ember-content-placeholders": "^1.0.0",
     "ember-data": "~3.12.0",
     "ember-export-application-global": "^2.0.0",
     "ember-href-to": "^3.1.0",
@@ -54,10 +55,10 @@
     "eslint-plugin-ember": "^6.10.0",
     "eslint-plugin-node": "^9.0.1",
     "loader.js": "^4.7.0",
+    "portfinder": "^1.0.21",
     "qunit-dom": "^0.9.0",
     "sass": "^1.22.9",
-    "yuidocjs": "^0.10.2",
-    "portfinder": "^1.0.21"
+    "yuidocjs": "^0.10.2"
   },
   "engines": {
     "node": "8.* || >= 10.*"

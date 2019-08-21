@@ -7,6 +7,10 @@ export default Component.extend( {
 
   init() {
     this._super( ...arguments );
+    this.set('isLoading', true);
     this.posts = this.get( 'infinity' ).model( 'post', {perPage: 5} )
+    this.posts.then(()=>{
+      this.set('isLoading', false);
+    })
   }
 } );
