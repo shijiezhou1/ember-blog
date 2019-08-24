@@ -7,7 +7,8 @@ export default [
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 2
+    "viewCount": 2,
+    "likes": 0
   },
   {
     "id": 2,
@@ -46,7 +47,8 @@ export default [
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 0
+    "viewCount": 0,
+    "likes": 0
   },
   {
     "id": 3,
@@ -195,7 +197,8 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 1
+    "viewCount": 1,
+    "likes": 0
   },
   {
     "id": 4,
@@ -205,7 +208,8 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 1
+    "viewCount": 1,
+    "likes": 0
   },
   {
     "id": 5,
@@ -215,9 +219,10 @@ export default [
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 2
+    "viewCount": 2,
+    "likes": 0
   },
-  
+
   {
     "id": 6,
     "title": "6-I'm Running to Reform the W3C's Tag",
@@ -282,7 +287,8 @@ export default [
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 2
+    "viewCount": 2,
+    "likes": 0
   },
   {
     "id": 7,
@@ -292,7 +298,8 @@ export default [
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 2
+    "viewCount": 2,
+    "likes": 0
   },
   {
     "id": 8,
@@ -302,7 +309,8 @@ export default [
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
     "categoryList": [],
-    "viewCount": 2
+    "viewCount": 2,
+    "likes": 0
   }
 ]
 

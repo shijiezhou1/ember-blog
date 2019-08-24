@@ -7,6 +7,13 @@ export default Route.extend({
   actions: {
     refreshModel() {
       this.refresh();
+    },
+    updateLike(likeId){
+      // console.log(likeId);
+      this.store.findRecord('post', likeId).then((post)=>{
+        post.incrementProperty('like');
+        post.save();
+      });
     }
   }
   // renderTemplate() {

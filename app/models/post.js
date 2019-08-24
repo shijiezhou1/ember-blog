@@ -8,5 +8,6 @@ export default Model.extend({
   url: DS.attr('string'),
   iconButtonList: DS.attr(),
   categoryList: DS.attr(),
-  viewCount: DS.attr()
+  viewCount: DS.attr(),
+  likes:DS.attr('number')
 });

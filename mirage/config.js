@@ -39,6 +39,12 @@ export default function () {
     return schema.posts.find(request.params.id);
   });
 
+  this.put('/posts/:id', function(schema, request){
+    const result = JSON.parse(request.requestBody);
+    result.post.likes++;
+    return result;
+  });
+
   //collection of data
   this.get('/posts', function (schema, request) {
     // console.log(request.queryParams);
