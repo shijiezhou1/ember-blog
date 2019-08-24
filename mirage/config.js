@@ -47,9 +47,7 @@ export default function () {
 
   //collection of data
   this.get('/posts', function (schema, request) {
-    // console.log(request.queryParams);
     // return schema.posts.all();
-    // console.log(schema.posts.all());
     let perPage = parseInt(request.queryParams.per_page, 10);
     let startPage = parseInt(request.queryParams.page, 10);
     let pageCount = Math.ceil(schema.posts.all().length / perPage);
