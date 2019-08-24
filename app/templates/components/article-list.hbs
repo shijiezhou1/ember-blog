@@ -11,12 +11,11 @@
     {{/card.content}}
   </a>
   {{#card.actions}}
-  {{!-- TODO making api call to add like --}}
     {{!-- {{#paper-button iconButton=true onClick=(action (mut oneTimeIcon) "favorite") }}
       {{paper-icon oneTimeIcon}}
     {{/paper-button}} --}}
     {{#paper-button iconButton=true onClick=(route-action "updateLike" value.id)}}
-      {{paper-icon "favorite_border"}}
+      {{paper-icon oneTimeIcon}}
     {{/paper-button}}
     {{#paper-button iconButton=true}}
       {{paper-icon value.iconButtonList.share}}
