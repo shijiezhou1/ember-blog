@@ -42,6 +42,7 @@ export default function () {
   this.put('/posts/:id', function(schema, request){
     const result = JSON.parse(request.requestBody);
     result.post.likes++;
+    result.post.viewCount++;
     return result;
   });
 

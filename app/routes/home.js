@@ -9,11 +9,9 @@ export default Route.extend({
       this.refresh();
     },
     updateLike(likeId){
-      // console.log(likeId);
-      this.store.findRecord('post', likeId).then((post)=>{
-        post.incrementProperty('like');
-        post.save();
-      });
+      const record = this.store.peekRecord('post', likeId); // retrieve record
+      record.incrementProperty('like');
+      record.save();
     }
   }
   // renderTemplate() {

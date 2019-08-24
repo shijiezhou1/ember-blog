@@ -3,8 +3,21 @@ import showdown from 'showdown';
 import showdownExt from '../extensions/showdown';
 
 export default Route.extend( {
+  beforeModel(){
+    // const currentPost = this.store.peekRecord('post', param.post_id);
+    // currentPost.incrementProperty('viewCount');
+    // currentPost.save();
+  },
   model( param ) {
+    this.set('postID', param.post_id);
     return this.store.findRecord( 'post', param.post_id );
+  },
+  afterModel(){
+    // UPDATE VIEW COUNTs
+    // TODO need to figureout how to handle refresh issue
+    const currRecord = this.store.peekRecord('post', this.get('postID'));
+    currRecord.incrementProperty('viewCount');
+    currRecord.save();
   },
   setupController( controller, model ) {
     showdown.setFlavor( 'github' );
