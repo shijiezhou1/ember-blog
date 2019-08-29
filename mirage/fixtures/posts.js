@@ -6,7 +6,7 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": [],
+    "categoryList": ['javascript'],
     "viewCount": 2,
     "likes": 0
   },
@@ -46,7 +46,7 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": [],
+    "categoryList": ['typescript'],
     "viewCount": 0,
     "likes": 0
   },
@@ -196,7 +196,7 @@ export default [
     "url": "www.google.com",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": [],
+    "categoryList": ['vuejs'],
     "viewCount": 1,
     "likes": 0
   },
@@ -218,7 +218,7 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": [],
+    "categoryList": ['java'],
     "viewCount": 2,
     "likes": 0
   },
@@ -286,7 +286,7 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": [],
+    "categoryList": ['emberjs'],
     "viewCount": 2,
     "likes": 0
   },
@@ -297,7 +297,7 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": [],
+    "categoryList": ['angularjs', 'vuejs'],
     "viewCount": 2,
     "likes": 0
   },
@@ -308,7 +308,7 @@ export default [
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": [],
+    "categoryList": ['reactjs', 'javascript'],
     "viewCount": 2,
     "likes": 0
   }
