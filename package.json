@@ -22,6 +22,7 @@
   "devDependencies": {
     "@ember/jquery": "^0.6.0",
     "@ember/optional-features": "^0.7.0",
+    "auth0-js": "^9.11.3",
     "broccoli-asset-rev": "^3.0.0",
     "ember-ajax": "^5.0.0",
     "ember-auto-import": "^1.5.2",
@@ -50,6 +51,8 @@
     "ember-qunit": "^4.5.1",
     "ember-resolver": "^5.2.0",
     "ember-route-action-helper": "^2.0.7",
+    "ember-simple-auth": "^1.9.2",
+    "ember-simple-auth-auth0": "^5.0.0-beta.0",
     "ember-social-share": "^0.3.5",
     "ember-source": "~3.12.0",
     "ember-tooltips": "^3.4.0",

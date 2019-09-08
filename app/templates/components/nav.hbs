@@ -16,12 +16,16 @@
     <i class="material-icons">
       notification_important
     </i>
-    <img
+    {{!-- <img
       src="https://cdn-images-1.medium.com/fit/c/64/64/0*b90Ej2bAcyCdYYuY"
       alt="user image"
       width="30px"
       height="30px"
-    />
+    /> --}}
+
+    {{#paper-button onClick=(action "login")}}
+      LOGIN
+    {{/paper-button}}
 
   </div>
 </div>
