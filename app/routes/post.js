@@ -14,7 +14,6 @@ export default Route.extend( {
   },
   afterModel(){
     // UPDATE VIEW COUNTs
-    // TODO need to figureout how to handle refresh issue
     const currRecord = this.store.peekRecord('post', this.get('postID'));
     currRecord.incrementProperty('viewCount');
     currRecord.save();

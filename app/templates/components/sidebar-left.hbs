@@ -6,7 +6,7 @@
     {{#each category as |cat|}}
       {{#paper-item
         class="md-body-2"
-        onClick=(action "redirectToLink" cat.title)
+        onClick=(action "setCategory" cat.title)
       }}
         <div class="md-list-item-text">
           <div>
