@@ -58,7 +58,7 @@
     "loader.js": "^4.7.0",
     "portfinder": "^1.0.23",
     "qunit-dom": "^0.9.0",
-    "sass": "^1.22.12",
+    "sass": "^1.23.1",
     "yuidocjs": "^0.10.2"
   },
   "engines": {
