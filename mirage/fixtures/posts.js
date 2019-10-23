@@ -303,7 +303,7 @@ export default [
   },
   {
     "id": 8,
-    "title": "8-sadalkjsdjials dasd asklj the W3C's Tag",
+    "title": "8-sadalkjsdjials dasd asklj the W3C's Tag 8-sadalkjsdjials dasd asklj the W3C's Tag 8-sadalkjsdjials dasd asklj the W3C's Tag 8-sadalkjsdjials dasd asklj the W3C's Tag",
     "text": "Some TextSome TextSome The titles of Washed Out's breakthrough song and the first single from Paracosm share two most important words in Ernest Greene's musical language: feel it. It's a simple request, as wel It's a simple request, as well",
     "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
     "url": "www.google.com",
