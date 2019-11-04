@@ -57,7 +57,7 @@
     "eslint-plugin-node": "^10.0.0",
     "loader.js": "^4.7.0",
     "portfinder": "^1.0.23",
-    "qunit-dom": "^0.9.0",
+    "qunit-dom": "^0.9.1",
     "sass": "^1.23.3",
     "yuidocjs": "^0.10.2"
   },
