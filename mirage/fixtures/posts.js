@@ -1,202 +1,35 @@
 export default [
   {
     "id": 1,
-    "title": "1-I'm Running to Reform the W3C's Tag",
-    "text": "Some TextSome TextSome The titles of Washed Out's breakthrough song and the first single from Paracosm share two most important words in Ernest Greene's musical language: feel it. It's a simple request, as wel It's a simple request, as well",
-    "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--o2WWhI0x--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/j1uy5mzlswvr45z7znjv.jpg",
+    "title": "Top 10 VS Code Extensions to Use as Junior JavaScript Developers",
+    "text": "The article shows 10 of useful tools to become a successful developer. Most of us have been using the VS code for a long time, and still developers always complain about why there are so many features missing compared to Intelli J or Eclipse. The truth is that they may not find the right extension of their working environment. Once you spend a minute to learn about those extensions, we can sure you will keep your love in the VS code again.\n\n## Project Manager\nhttps://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager\nVery useful and common project manager tools\n![](https://thepracticaldev.s3.amazonaws.com/i/e5g1lqzurxf9fmgl6sms.png)\n## Gitlens\nhttps://marketplace.visualstudio.com/items?itemName=eamodio.gitlens\nAn alternative tool for Github desktop. It is very simple and clean use guide for all developers\n![](https://thepracticaldev.s3.amazonaws.com/i/kdbq2doqbmdp0oqb9kj5.png)\n## JavaScript (ES6) code snippets\nhttps://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets\nJavaScript favorite tools, if you are familiar with ES6 syntax, this extension can save you tons of time of typing\n![](https://thepracticaldev.s3.amazonaws.com/i/758yfglezc5whle90wpn.png)\n## npm Intellisense\nhttps://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script\nAlways forget to install npm package, but this can remind you what you miss on your excellent projects\n![](https://thepracticaldev.s3.amazonaws.com/i/bzf8k94cmw4kwqubn3ka.png)\n## Path Intellisense\nhttps://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense\nThe import npm package automatically while you are typing\n![](https://thepracticaldev.s3.amazonaws.com/i/j5g1eo9nst0doco951lt.png)\n## Todo Tree\nhttps://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree\nAs developer, Todo Tree is never getting old once you have a great project and forget to fix a problem later\n![](https://thepracticaldev.s3.amazonaws.com/i/8c9fnoeya2xhdf97fh8u.png)\n## ESLint\nhttps://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint\nLint can help you make your code much better and style your own rule.\n![](https://thepracticaldev.s3.amazonaws.com/i/8upknfsmswe42awpet5e.png)\n## JS Parameter Annotations\nhttps://marketplace.visualstudio.com/items?itemName=lannonbr.vscode-js-annotations\nHaving trouble remembering what parameters can a function take, this plugin is able to show you what you can put\n![](https://thepracticaldev.s3.amazonaws.com/i/rigpg7nohey0qz1fxdjw.png)\n## Log File Highlighter\nhttps://marketplace.visualstudio.com/items?itemName=emilast.LogFileHighlighter\nHaving a hard time of reading your log file? With that you can make your life easier\n![](https://thepracticaldev.s3.amazonaws.com/i/58wuffqykyjgsna1xa1f.png)\n## Prettier - Code formatter\nhttps://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode\nAlways worry about the mixing code withåout properly format? Make your code much prettier ever\n![](https://thepracticaldev.s3.amazonaws.com/i/l3ttslib519de0nbjeaa.png)",
+    "img": "https://thepracticaldev.s3.amazonaws.com/i/esex8gbu2d8uiv8s9a0r.png",
     "url": "www.google.com",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": ['javascript'],
+    "categoryList": ["javascript, webdev, vscode, git"],
     "viewCount": 2,
     "likes": 0
   },
   {
     "id": 2,
-    "title": "2-Rails is omakase",
-    "text": "## chinese won't show \n" +
-      "- first item \n" +
-      "- second item \n" +
-      "\n" +
-      "**如果你想参与贡献 TensorFlow，请先查看我们的 [贡献指南](CONTRIBUTING.md)。此项目遵循 TensorFlow\n" +
-      "[项目规范](CODE_OF_CONDUCT.md)。我们期望你能遵循此规范。**\n" +
-      "\n" +
-      "**我们还使用 [GitHub issues](https://github.com/tensorflow/tensorflow/issues) 来跟进 requests 和 bugs。对于一般性问题和讨论请查看 \n" +
-      "[TensorFlow 讨论](https://groups.google.com/a/tensorflow.org/forum/#!forum/discuss)，或直接在 [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow) 提问。**\n" +
-      "\n" +
-      "TensorFlow 项目致力于遵守开源软件开发中普遍接受的最佳实践：\n" +
-      "\n" +
-      "[![CII 最佳实践](https://bestpractices.coreinfrastructure.org/projects/1486/badge)](https://bestpractices.coreinfrastructure.org/projects/1486)\n" +
-      "\n" +
-      "## 中文 不显示 \n" +
-      "\n" +
-      "### abc 官方 构建 \n" +
-      "\n" +
-      "| Build Type      | Status | Artifacts |\n" +
-      "| ---             | ---    | ---       |\n" +
-      "| **Linux CPU**   | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-cc.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-cc.html) | [pypi](https://pypi.org/project/tf-nightly/) |\n" +
-      "| **Linux GPU**   | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-gpu-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-gpu-py3.html) | [pypi](https://pypi.org/project/tf-nightly-gpu/) |\n" +
-      "| **Linux XLA**   | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-xla.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/ubuntu-xla.html) | TBA |\n" +
-      "| **MacOS**       | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/macos-py2-cc.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/macos-py2-cc.html) | [pypi](https://pypi.org/project/tf-nightly/) |\n" +
-      "| **Windows CPU** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-cpu.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-cpu.html) | [pypi](https://pypi.org/project/tf-nightly/) |\n" +
-      "| **Windows GPU** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-gpu.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/windows-gpu.html) | [pypi](https://pypi.org/project/tf-nightly-gpu/) |\n" +
-      "| **Android**     | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/android.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/android.html) | [![Download](https://api.bintray.com/packages/google/tensorflow/tensorflow/images/download.svg)](https://bintray.com/google/tensorflow/tensorflow/_latestVersion) |\n" +
-      "| **Raspberry Pi 0 and 1** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py2.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py2.html) [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi01-py3.html) | [Py2](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp27-none-linux_armv6l.whl) [Py3](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp34-none-linux_armv6l.whl) |\n" +
-      "| **Raspberry Pi 2 and 3** | [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py2.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py2.html) [![Status](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py3.svg)](https://storage.googleapis.com/tensorflow-kokoro-build-badges/rpi23-py3.html) | [Py2](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp27-none-linux_armv7l.whl) [Py3](https://storage.googleapis.com/tensorflow-nightly/tensorflow-1.10.0-cp34-none-linux_armv7l.whl) |\n"
+    "title": "Top 10 IntelliJ IDEA Plugins to Use as Junior JavaScript Developers in 2019",
+    "text": "\nThe article will show you the 10 useful tools to become a successful developer. Most of us have been using the IntelliJ while developing, and still, developers always complain about why there are so many features missing compared to current VS code or Eclipse. Once you spend a little time to invest some useful plugins for your IDE, you can speed up your work as daily.\n\n## Nodejs\nAs a JavaScript developer, we always need to reference the syntax of Nodejs. That suggests from official Nodejs web.\n![](https://thepracticaldev.s3.amazonaws.com/i/ih46n38pcl3cdckmcsls.png)\n\n## Material Theme UI\nA better look of the theme can help you identify the code quickly. \n![](https://thepracticaldev.s3.amazonaws.com/i/ebnx8fexcxl8vmbchdco.png)\n\n## String Manipulation\nThis plugin allows you to change the variable name to whatever case you look for.\n![](https://thepracticaldev.s3.amazonaws.com/i/f3gcfyliie6wjmm9n0xs.png)\n\n## Camel Case\nSwitching variable to Camel Case\n![](https://thepracticaldev.s3.amazonaws.com/i/3xa13uoyb0gp6tb5h1c8.png)\n\n## Docker\nEasy way to deploy and setup docker image on your editor\n![](https://thepracticaldev.s3.amazonaws.com/i/zu9b1l0e4todz9mtwoy2.png)\n\n## AWS Tools Kit\nBest plugin for the developer to create a serverless application and provide a lot of features\n![](https://thepracticaldev.s3.amazonaws.com/i/uc1fi5dwocywn1mn6z3f.png)\n\n## JS GraphQL\nJavascript and Typescript schema and query builder tool\n![](https://thepracticaldev.s3.amazonaws.com/i/ercevqztrkmgkjnkwhal.png)\n\n## Eclipse Code Format\nFormat the code with custom style like the eclipse editor\n![](https://thepracticaldev.s3.amazonaws.com/i/ep8d3e5w9roi3k86i44j.png)\n\n## .ignore\nEasy git ignore file generator.\n![](https://thepracticaldev.s3.amazonaws.com/i/le37quayeqrc5k7oaeik.png)\n\n## Maven Helper\nAn easy way for analyzing and avoid the dependency conflict.\n![](https://thepracticaldev.s3.amazonaws.com/i/lzmzihp6ufsfoiyy0u8f.png)\n"
     ,
-    "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
-    "url": "www.google.com",
+    "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--4VpnadUM--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/z76icovh975ulp9ik50d.png",
+    "url": "https://res.cloudinary.com/practicaldev/image/fetch/s--4VpnadUM--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/z76icovh975ulp9ik50d.png",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": ['typescript'],
+    "categoryList": ["typescript, javascript, aws, vscode"],
     "viewCount": 0,
     "likes": 0
   },
   {
     "id": 3,
-    "title": "3-Master infor",
-    "text": "# Ember CLI Showdown\n" +
-      "\n" +
-      "[![Build Status](https://travis-ci.org/gcollazo/ember-cli-showdown.svg?branch=master)](https://travis-ci.org/gcollazo/ember-cli-showdown)\n" +
-      "[![Ember Observer Score](http://emberobserver.com/badges/ember-cli-showdown.svg)](http://emberobserver.com/addons/ember-cli-showdown)\n" +
-      "\n" +
-      "This addon provides a component that transforms [Markdown](http://en.wikipedia.org/wiki/Markdown) into valid HTML.\n" +
-      "\n" +
-      "* Fastboot compatible\n" +
-      "\n" +
-      "## Requirements\n" +
-      "\n" +
-      "* ember-cli >= 2.16.0 (if on older version of ember-cli, target ember-cli-showdown@3)\n" +
-      "\n" +
-      "## Usage\n" +
-      "From within your Ember CLI application, run the following:\n" +
-      "\n" +
-      "- `ember install ember-cli-showdown`\n" +
-      "\n" +
-      "Passing a markdown string inline:\n" +
-      "\n" +
-      "```handlebars\n" +
-      "{{markdown-to-html \"#Markdown is cool [link](http://emberjs.com)\"}}\n" +
-      "```\n" +
-      "\n" +
-      "```html\n" +
-      "<!-- Output -->\n" +
-      "<h1>Markdown is cool <a href=\"http://emberjs.com\">link</a></h1>\n" +
-      "```\n" +
-      "\n" +
-      "You can also pass a bound value:\n" +
-      "\n" +
-      "```handlebars\n" +
-      "{{markdown-to-html postContent}}\n" +
-      "```\n" +
-      "\n" +
-      "### Showdown Options\n" +
-      "\n" +
-      "You can use [configuration settings from Showdown][showdown-config]:\n" +
-      "\n" +
-      "```handlebars\n" +
-      "{{markdown-to-html\n" +
-      "  markdown=postContent\n" +
-      "  strikethrough=true\n" +
-      "  literalMidWordUnderscores=true\n" +
-      "  simplifiedAutoLink=true}}\n" +
-      "```\n" +
-      "\n" +
-      "[showdown-config]: https://github.com/showdownjs/showdown#valid-options\n" +
-      "\n" +
-      "#### Global Showdown Options\n" +
-      "\n" +
-      "Global options are supported as of 2.11.x.  This lets you define options that will be used\n" +
-      "for showdown options that were not provided as an attribute.\n" +
-      "\n" +
-      "An example where you always want to auto link:\n" +
-      "\n" +
-      "```js\n" +
-      "// config/environment.js\n" +
-      "module.exports = function(environment) {\n" +
-      "  var ENV = {\n" +
-      "    showdown: {\n" +
-      "      simplifiedAutoLink: true\n" +
-      "    }\n" +
-      "  }\n" +
-      "\n" +
-      "  return ENV;\n" +
-      "}\n" +
-      "```\n" +
-      "\n" +
-      "### Showdown Extensions\n" +
-      "\n" +
-      "You can load [Showdown Extensions](https://github.com/showdownjs/showdown/wiki/extensions) by specifying the\n" +
-      "\"extensions\" property when initializing your component:\n" +
-      "\n" +
-      "```handlebars\n" +
-      "{{markdown-to-html\n" +
-      "  markdown=postContent\n" +
-      "  extensions=myExtensionList}}\n" +
-      "```\n" +
-      "\n" +
-      "```handlebars\n" +
-      "{{markdown-to-html\n" +
-      "  markdown=postContent\n" +
-      "  extensions='foo bar baz'}}\n" +
-      "```\n" +
-      "\n" +
-      "(`myExtensionList` can be an array of strings or a space separated string)\n" +
-      "\n" +
-      "Note that you'll have to register your extensions with Showdown first.\n" +
-      "For example, in an initializer:\n" +
-      "\n" +
-      "```js\n" +
-      "// app/initializers/register-showdown-extensions.js\n" +
-      "import showdown from 'showdown';\n" +
-      "\n" +
-      "export function initialize() {\n" +
-      "  showdown.extension(\"myExtensionName\", function() {\n" +
-      "    return [{\n" +
-      "      type: 'html',\n" +
-      "      regex: '<blockquote>',\n" +
-      "      replace: '<blockquote class=\"blockquote\">'\n" +
-      "    }];\n" +
-      "  });\n" +
-      "}\n" +
-      "\n" +
-      "export default {\n" +
-      "  name: 'register-showdown-extensions',\n" +
-      "  initialize\n" +
-      "};\n" +
-      "```\n" +
-      "\n" +
-      "[showdown-extensions]: https://github.com/showdownjs/showdown/wiki/extensions\n" +
-      "\n" +
-      "## 3.x to 4.3 migration\n" +
-      "* Global `showdown` is no longer supported.  Must be imported via `import showdown from 'showdown'`\n" +
-      "* Remove any use of `FastBoot.require('require')` with `import showdown from 'showdown'`\n" +
-      "\n" +
-      "## Dependencies\n" +
-      "* [Showdown](https://github.com/showdownjs/showdown)\n" +
-      "\n" +
-      "## Development\n" +
-      "\n" +
-      "* `git clone https://github.com/gcollazo/ember-cli-showdown.git`\n" +
-      "* `cd ember-cli-showdown`\n" +
-      "* `npm install`\n" +
-      "* `bower install`\n" +
-      "\n" +
-      "## Previewing\n" +
-      "\n" +
-      "* `ember server`\n" +
-      "* Visit your app at http://localhost:4200.\n" +
-      "\n" +
-      "## Running Tests\n" +
-      "\n" +
-      "* `ember test`\n" +
-      "* `ember test --server`\n" +
-      "\n" +
-      "## Building\n" +
-      "\n" +
-      "* `ember build`\n",
+    "title": "Top 10 Developer Tools You Didn't Know You Needed",
+    "text": "Your master guide to become a professional model web developer in Mac:\nThere are my 'Must have' programming tools. They are universally applicable: you will absolutely benefit from using them regarding of the kind of programming jobs. I hope you will find out more useful tools to add to your development environment.\n\n### 1. JetBrains Tools App\n\nManage installed JetBrains tools, download new ones and open recent projects.\nhttps://www.jetbrains.com/toolbox/\n![](https://thepracticaldev.s3.amazonaws.com/i/yof1geh9ys3mhnredsd9.png)\n\n### 2. Dash\n\nAwesome API documentation browser and code snippet manager.\nhttps://kapeli.com/dash\n![](https://thepracticaldev.s3.amazonaws.com/i/3m6i3ziw9v1y0gqxpz23.png)\n\n\n### 3. DBeaver\n\nUniversal SQL Client such as MYSQL, Postgres, etc\nhttps://dbeaver.io/\n![](https://thepracticaldev.s3.amazonaws.com/i/sqd5jisgdeubltg76ayi.png)\n\n### 4. Studio 3T\n\nEasy IDE for manager and it is free for MongoDB\nhttps://studio3t.com/\n![](https://thepracticaldev.s3.amazonaws.com/i/3xmllzmocsj3a7no8u9j.png)\n\n### 5. Spark \n\nManager large scale and organize your email while developing\nhttps://sparkmailapp.com/\n![](https://thepracticaldev.s3.amazonaws.com/i/uuwf1fhn29b29qif9ghj.png)\n\n### 6. Tor Browser\n\nAnonymity Online. Protect your privacy. Defend against network surveillance and traffic analysis. \nhttps://www.torproject.org/\n![](https://thepracticaldev.s3.amazonaws.com/i/4vpe6es6ecrx69ueo03w.png)\n\n### 7. Alfred\n\nAward-winning app which boosts efficiency with hotkeys, keywords, text expansion and more. Search your Mac and the web, and be more productive with custom actions to control your Mac. \nhttps://www.alfredapp.com/\n![](https://thepracticaldev.s3.amazonaws.com/i/nuvmf55rd15a6u41qg1p.png)\n\n### 8. GitKraken\n\nThe most popular Git GUI for Windows, Mac and Linux.\nhttps://www.gitkraken.com/\n![](https://thepracticaldev.s3.amazonaws.com/i/hbuq1r1e6gpgywur7ibu.png)\n\n### 9. StarUML3 \n\nAll-in-one UML, SysML, BPMN Modeling Platform for Agile, EA TOGAF ADM Process Management.\nhttp://staruml.io/\n![](https://thepracticaldev.s3.amazonaws.com/i/w390a9nev800k6zf9uzo.png)\n\n### 10. Insomnia\n\nThe most intuitive cross-platform REST API Client.\nhttps://insomnia.rest/\n![](https://thepracticaldev.s3.amazonaws.com/i/w92icn3ybmsljwskh2as.png)\n\n",
     "url": "www.google.com",
-    "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--yuvBDNvQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--KDeQCWRL--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/fobvk7m7w88zk809a9b6.png",
+    "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--6JmWLZoE--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/2poyapfhcebqtnrmn2cd.png",
     "iconButtonList": { favorite: "favorite", share: "share" },
-    "categoryList": ['vuejs'],
+    "categoryList": ["javascript, typescript, java, react"],
     "viewCount": 1,
     "likes": 0
   },
