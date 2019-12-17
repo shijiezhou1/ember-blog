@@ -1,5 +1,8 @@
 # Ember-Blog
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/maintainability)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/test_coverage)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/test_coverage)
+
+
 demo: https://bloging.netlify.com/
 or: https://shijiezhou1.github.io/Ember-Blog/
 
