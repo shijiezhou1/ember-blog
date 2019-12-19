@@ -1,10 +1,12 @@
 # Ember-Blog
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/maintainability)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/test_coverage)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/test_coverage)
-
+[![Build Status](https://travis-ci.com/shijiezhou1/Ember-Blog.svg?branch=master)](https://travis-ci.com/shijiezhou1/Ember-Blog)
 
 demo: https://bloging.netlify.com/
 or: https://shijiezhou1.github.io/Ember-Blog/
+
+**TL;DR;**
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
