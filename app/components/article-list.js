@@ -1,6 +1,6 @@
-import Component from '@ember/component';
+import Component from '@ember/component'
 
-export default Component.extend( {
+export default Component.extend({
   classNames: ['singleArticleList'],
   /**
    * This variable is class name from material design.
@@ -11,9 +11,9 @@ export default Component.extend( {
 
   oneTimeIcon: 'favorite_border',
   mouseEnter() {
-    this.set( 'mdWhiteframe_10dp', true );
+    this.set('mdWhiteframe_10dp', true)
   },
   mouseLeave() {
-    this.set( 'mdWhiteframe_10dp', false );
-  }
-} );
+    this.set('mdWhiteframe_10dp', false)
+  },
+})

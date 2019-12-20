@@ -1,5 +1,5 @@
-import Component from '@ember/component';
-import { computed } from '@ember/object';
+import Component from '@ember/component'
+import { computed } from '@ember/object'
 
 /**
  * The loader component
@@ -17,7 +17,5 @@ export default Component.extend({
    * @property {Object} loadingQuery
    * @return hello
    */
-  loadingQuery: computed('loadingQuery', function () {
-
-  })
-});
+  loadingQuery: computed('loadingQuery', function() {}),
+})

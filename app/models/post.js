@@ -1,5 +1,5 @@
-import DS from 'ember-data';
-const { Model } = DS;
+import DS from 'ember-data'
+const { Model } = DS
 
 export default Model.extend({
   title: DS.attr('string'),
@@ -9,5 +9,5 @@ export default Model.extend({
   iconButtonList: DS.attr(),
   categoryList: DS.attr(),
   viewCount: DS.attr(),
-  likes:DS.attr('number')
-});
+  likes: DS.attr('number'),
+})

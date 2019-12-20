@@ -17,7 +17,8 @@
     "lint:js": "eslint app/",
     "start": "ember serve",
     "test": "ember test",
-    "clean": "rm -rf tmp/ dist/ node_modules/ package-lock.json"
+    "clean": "rm -rf tmp/ dist/ node_modules/ package-lock.json",
+    "prettier": "prettier --write \"app/*/*.js\""
   },
   "devDependencies": {
     "@ember/jquery": "^1.1.0",
@@ -56,13 +57,21 @@
     "ember-tooltips": "^3.4.0",
     "eslint-plugin-ember": "^6.10.0",
     "eslint-plugin-node": "^10.0.0",
+    "husky": "^3.1.0",
     "loader.js": "^4.7.0",
     "portfinder": "^1.0.23",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "qunit-dom": "^0.9.0",
     "sass": "^1.23.3",
     "yuidocjs": "^0.10.2"
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier && pretty-quick --staged && git add ."
+    }
   }
 }

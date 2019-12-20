@@ -1,4 +1,4 @@
-import Component from '@ember/component';
+import Component from '@ember/component'
 
 /**
  * The side wrap on the left
@@ -17,5 +17,5 @@ export default Component.extend({
    * @public
    *
    */
-  classNames: ['layout-row flex-20 application-left-bar hide-sm hide-xs']
-});
+  classNames: ['layout-row flex-20 application-left-bar hide-sm hide-xs'],
+})
