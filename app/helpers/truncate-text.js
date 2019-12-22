@@ -1,15 +1,15 @@
-import { helper } from '@ember/component/helper'
+import { helper } from "@ember/component/helper"
 
 export default helper(function truncateText(params, hash) {
   const [value] = params
   const { limit } = hash
-  let text = ''
+  let text = ""
 
   if (value != null && value.length > 0) {
     text = value.substr(0, limit)
 
     if (value.length > limit) {
-      text += '...'
+      text += "..."
     }
   }
 

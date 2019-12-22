@@ -1,5 +1,5 @@
-import Component from '@ember/component'
-import EmberObject, { computed } from '@ember/object'
+import Component from "@ember/component"
+import EmberObject, { computed } from "@ember/object"
 
 export default Component.extend({
   page: 0,
@@ -11,29 +11,29 @@ export default Component.extend({
       })
     },
   }),
-  totalBears: computed('model.[]', function() {
-    return this.get('model.length')
+  totalBears: computed("model.[]", function() {
+    return this.get("model.length")
   }),
-  bears: computed('model.[]', 'page', function() {
+  bears: computed("model.[]", "page", function() {
     // console.log(this.page);
-    var page = this.get('page')
-    return this.get('model').slice(page, page + 5)
+    var page = this.get("page")
+    return this.get("model").slice(page, page + 5)
   }),
-  favoritedBears: computed('model.@each.favorited', {
+  favoritedBears: computed("model.@each.favorited", {
     get: function() {
-      return this.get('model').filterBy('favorited', true).length
+      return this.get("model").filterBy("favorited", true).length
     },
   }),
   actions: {
     showMore() {
-      this.incrementProperty('page', 5)
+      this.incrementProperty("page", 5)
     },
     favorite(bear) {
       // toggler the variable
-      bear.toggleProperty('favorited')
+      bear.toggleProperty("favorited")
     },
     checkModel() {
-      console.dir(this.get('model'))
+      console.dir(this.get("model"))
     },
   },
 })

@@ -1,4 +1,4 @@
-import Route from '@ember/routing/route'
+import Route from "@ember/routing/route"
 
 export default Route.extend({
   model() {
@@ -9,8 +9,8 @@ export default Route.extend({
       this.refresh()
     },
     updateLike(likeId) {
-      const record = this.store.peekRecord('post', likeId) // retrieve record
-      record.incrementProperty('like')
+      const record = this.store.peekRecord("post", likeId) // retrieve record
+      record.incrementProperty("like")
       record.save()
     },
   },
