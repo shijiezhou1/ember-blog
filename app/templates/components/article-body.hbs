@@ -5,10 +5,10 @@
     {{#each posts as |value|}}
       {{article-list value=value}}
     {{/each}}
+  </div>
     {{infinity-loader
       infinityModel=posts
       loadingText="Loading Contents..."
-      loadedText="Contents Entirely loaded."
+      loadedText="All Results..."
     }}
-  </div>
 {{/if}}
