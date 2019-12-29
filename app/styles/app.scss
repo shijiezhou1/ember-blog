@@ -1,5 +1,5 @@
-@import 'variable-list';
-@import 'ember-paper';
+@import "variable-list";
+@import "ember-paper";
 
 * {
   scroll-behavior: smooth;
@@ -78,12 +78,12 @@
   }
   & .loadingStyle:nth-child(odd) {
     width: 45%;
-    margin-right:10px;
-    margin-bottom:10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
   & .loadingStyle:nth-child(even) {
     width: 45%;
-    margin-right:10px;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
 }
@@ -108,7 +108,7 @@
     max-width: 414px;
   }
   .flex-container {
-    width: 50%;
+    width: 100%;
   }
   .menu-list-items {
     display: block;
@@ -133,6 +133,17 @@
     }
     code {
       font-size: 12px;
+    }
+  }
+  .postCardStyle {
+    md-card-title {
+      > md-card-title-text {
+        span {
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
