@@ -63,6 +63,7 @@
   width: 600px;
   img {
     width: 600px;
+    cursor: zoom-in;
   }
 }
 
@@ -120,6 +121,9 @@
   }
   .postContentStyle {
     max-width: 95%;
+    img {
+      width: 100%;
+    }
     > :first-child {
       width: 100%;
     }
