@@ -65,6 +65,13 @@
     width: 600px;
     cursor: zoom-in;
   }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    code {
+      font-size: 12px;
+    }
+  }
 }
 
 .flex-container {
@@ -104,6 +111,11 @@
   }
 }
 
+.pdfSetting {
+  width: 60%;
+  height: 100vh;
+}
+
 @media only screen and (max-width: 414px) {
   .application_nav {
     max-width: 414px;
@@ -134,9 +146,11 @@
       font-size: 0.7em;
       padding: 6% 10px;
       overflow-wrap: normal;
-    }
-    code {
-      font-size: 12px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      code {
+        font-size: 12px;
+      }
     }
   }
   .postCardStyle {
@@ -158,6 +172,10 @@
   }
   .application_float_card_right {
     display: none;
+  }
+  .pdfSetting {
+    width: 60%;
+    height: 100vh;
   }
 }
 
