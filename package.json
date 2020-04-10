@@ -61,7 +61,7 @@
     "portfinder": "1.0.25",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "qunit-dom": "0.9.2",
+    "qunit-dom": "1.1.0",
     "sass": "1.26.3",
     "yuidocjs": "^0.10.2"
   },
