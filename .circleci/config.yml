@@ -2,9 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:7.10-browsers
-        environment:
-          CHROME_BIN: "/usr/bin/google-chrome"
+      - image: circleci/node:10
     steps:
-      - checkout
-      - run: npm install
+      - run:
+          name: Checking Node and Npm Versions
+          command: |
+            node --version
+            npm --version
+            npm install
+            npm run build

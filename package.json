@@ -3,12 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "description": "Small description for ember-blog goes here",
-  "repository": "",
   "license": "MIT",
   "author": "",
   "directories": {
     "doc": "doc",
     "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shijiezhou1/ember-blog.git"
   },
   "scripts": {
     "build": "ember build",
