@@ -17,6 +17,5 @@ jobs:
           name: Deploy
           command: |
             npm i
-            npm run build
             npm run lint:js
             npm run lint:hbs

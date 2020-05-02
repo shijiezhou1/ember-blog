@@ -1,6 +1,6 @@
 import Component from "@ember/component"
 import { inject as service } from "@ember/service"
-import EmberObject, { computed } from "@ember/object"
+import { computed } from "@ember/object"
 
 export default Component.extend({
   infinity: service(),
@@ -21,7 +21,7 @@ export default Component.extend({
   }),
 
   actions: {
-    async filterProducts(query) {
+    async filterProducts() {
       let posts = this.get("infinity").model("post")
       // let posts = await this.store.query( 'post', {query} );
       // model is the collection returned from the route model hook
