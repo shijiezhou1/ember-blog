@@ -4,10 +4,19 @@ jobs:
     docker:
       - image: circleci/node:10
     steps:
+      - checkout # MUST ADD
+      # The redacted variables listed above will be masked in run step output.====>> Checkout code
+      #!/bin/bash -eo pipefail
+      # mkdir -p /home/circleci/project && cd /tmp/_circleci_local_build_repo && git ls-files | tar -T - -c | tar -x -C /home/circleci/project && cp -a /tmp/_circleci_local_build_repo/.git /home/circleci/project
       - run:
           name: Checking Node and Npm Versions
           command: |
             node --version
             npm --version
-            npm install
+      - deploy:
+          name: Deploy
+          command: |
+            npm i
             npm run build
+            npm run lint:js
+            npm run lint:hbs
