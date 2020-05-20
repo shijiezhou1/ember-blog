@@ -58,15 +58,16 @@ export default Component.extend({
       .addClass("active")
   },
 
-  mouseEnter(event) {
-    this.set("mouseIsIn", true)
-    return false
-  },
+  // TODO: replace mouse enter with other
+  // mouseEnter(event) {
+  //   this.set("mouseIsIn", true)
+  //   return false
+  // },
 
-  mouseLeave(event) {
-    this.set("mouseIsIn", false)
-    return false
-  },
+  // mouseLeave(event) {
+  //   this.set("mouseIsIn", false)
+  //   return false
+  // },
 
   actions: {
     changeHello() {
