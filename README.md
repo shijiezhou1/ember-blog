@@ -2,12 +2,7 @@
 
 ## ci-ember-demo
 
-[![CircleCI](https://circleci.com/gh/shijiezhou1/ember-blog.svg?style=svg)](https://circleci.com/gh/shijiezhou1/ember-blog)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/maintainability)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/test_coverage)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/test_coverage)
-[![Build Status](https://travis-ci.com/shijiezhou1/Ember-Blog.svg?branch=master)](https://travis-ci.com/shijiezhou1/Ember-Blog)
-[![License](https://img.shields.io/github/license/shijiezhou1/Ember-Blog.svg?style=flat)](https://github.com/shijiezhou1/Ember-Blog/blob/master/LICENSE.md)
-[![Coverage Status](https://coveralls.io/repos/github/shijiezhou1/Ember-Blog/badge.svg?branch=master)](https://coveralls.io/github/shijiezhou1/Ember-Blog?branch=master)
+[![Build status](https://ci.appveyor.com/api/projects/status/wu9m922q4hu8231x/branch/master?svg=true)](https://ci.appveyor.com/project/shijiezhou1/ember-blog/branch/master) [![CircleCI](https://circleci.com/gh/shijiezhou1/ember-blog.svg?style=svg)](https://circleci.com/gh/shijiezhou1/ember-blog) [![Maintainability](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/maintainability)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d56d8c23aacdead09f5d/test_coverage)](https://codeclimate.com/github/shijiezhou1/Ember-Blog/test_coverage) [![Build Status](https://travis-ci.com/shijiezhou1/Ember-Blog.svg?branch=master)](https://travis-ci.com/shijiezhou1/Ember-Blog) [![License](https://img.shields.io/github/license/shijiezhou1/Ember-Blog.svg?style=flat)](https://github.com/shijiezhou1/Ember-Blog/blob/master/LICENSE.md) [![Coverage Status](https://coveralls.io/repos/github/shijiezhou1/Ember-Blog/badge.svg?branch=master)](https://coveralls.io/github/shijiezhou1/Ember-Blog?branch=master)
 
 demo: https://bloging.netlify.com/
 or: https://shijiezhou1.github.io/Ember-Blog/
