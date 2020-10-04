@@ -52,7 +52,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-paper": "1.0.0-beta.29",
     "ember-qunit": "4.6.0",
-    "ember-resolver": "^5.2.0",
+    "ember-resolver": "^8.0.2",
     "ember-route-action-helper": "2.0.8",
     "ember-social-share": "^0.3.5",
     "ember-source": "3.17.3",
