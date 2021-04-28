@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "12:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: ember-data
+    versions:
+    - 3.24.0
+    - 3.25.0
+  - dependency-name: ember-cli-mirage
+    versions:
+    - 2.0.1
